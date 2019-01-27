@@ -1,0 +1,1443 @@
+<?xml version="1.0"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+<net id="RefineWMG-PT-010-011" type="http://www.pnml.org/version-2009/grammar/ptnet">
+<name>
+<text>RefineWMG-PT-010-011</text>
+</name>
+<page id="g0">
+<transition id="t">
+<name>
+<text>t</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="25" y="335"/>
+</graphics>
+</transition>
+<transition id="tprime">
+<name>
+<text>tprime</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="25" y="140"/>
+</graphics>
+</transition>
+<transition id="tsecond">
+<name>
+<text>tsecond</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="1865" y="230"/>
+</graphics>
+</transition>
+<place id="p">
+<name>
+<text>p</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="3885" y="415"/>
+</graphics>
+</place>
+<place id="pprime">
+<name>
+<text>pprime</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="185" y="290"/>
+</graphics>
+<initialMarking>
+<text>7</text>
+</initialMarking>
+</place>
+<place id="psecond">
+<name>
+<text>psecond</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="185" y="190"/>
+</graphics>
+<initialMarking>
+<text>5</text>
+</initialMarking>
+</place>
+<place id="pterce">
+<name>
+<text>pterce</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="145" y="50"/>
+</graphics>
+</place>
+<arc id="e-1" source="pterce" target="tprime">
+ <inscription>
+    <text>3</text>
+    <graphics>
+     <offset x="0" y="-10"/>
+    </graphics>
+ </inscription>
+</arc>
+<arc id="e-2" source="tprime" target="psecond">
+ <inscription>
+    <text>3</text>
+    <graphics>
+     <offset x="0" y="-10"/>
+    </graphics>
+ </inscription>
+</arc>
+<arc id="e-3" source="psecond" target="tsecond">
+ <inscription>
+    <text>2</text>
+    <graphics>
+     <offset x="0" y="-10"/>
+    </graphics>
+ </inscription>
+</arc>
+<arc id="e-4" source="tsecond" target="pterce">
+ <inscription>
+    <text>2</text>
+    <graphics>
+     <offset x="0" y="-10"/>
+    </graphics>
+ </inscription>
+</arc>
+<arc id="e-5" source="t" target="pprime">
+ <inscription>
+    <text>5</text>
+    <graphics>
+     <offset x="0" y="-10"/>
+    </graphics>
+ </inscription>
+</arc>
+<arc id="e-6" source="p1" target="t">
+ <inscription>
+    <text>5</text>
+    <graphics>
+     <offset x="0" y="-10"/>
+    </graphics>
+ </inscription>
+</arc>
+<arc id="e-7" source="tsecond" target="p">
+ <inscription>
+    <text>2</text>
+    <graphics>
+     <offset x="0" y="-10"/>
+    </graphics>
+ </inscription>
+</arc>
+<arc id="e-8" source="pprime" target="tsecond">
+ <inscription>
+    <text>2</text>
+    <graphics>
+     <offset x="0" y="-10"/>
+    </graphics>
+ </inscription>
+</arc>
+<place id="p1">
+<name>
+<text>p1</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="145" y="420"/>
+</graphics>
+</place>
+<place id="p2">
+<name>
+<text>p2</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="60" y="590"/>
+</graphics>
+</place>
+<place id="p3">
+<name>
+<text>p3</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="225" y="590"/>
+</graphics>
+<initialMarking>
+<text>011</text>
+</initialMarking>
+</place>
+<place id="p4">
+<name>
+<text>p4</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="300" y="590"/>
+</graphics>
+<initialMarking>
+<text>011</text>
+</initialMarking>
+</place>
+<place id="p5">
+<name>
+<text>p5</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="470" y="590"/>
+</graphics>
+</place>
+<transition id="t1">
+<name>
+<text>t1</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="250" y="500"/>
+</graphics>
+</transition>
+<transition id="t2">
+<name>
+<text>t2</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="140" y="670"/>
+</graphics>
+</transition>
+<transition id="t3">
+<name>
+<text>t3</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="385" y="670"/>
+</graphics>
+</transition>
+<transition id="t4">
+<name>
+<text>t4</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="385" y="590"/>
+</graphics>
+</transition>
+<arc id="e-9" source="t1" target="p1">
+</arc>
+<arc id="e-11" source="t1" target="p2">
+</arc>
+<arc id="e-12" source="p2" target="t2">
+</arc>
+<arc id="e-13" source="t2" target="p3">
+</arc>
+<arc id="e-14" source="p3" target="t1">
+</arc>
+<arc id="e-15" source="t3" target="p4">
+</arc>
+<arc id="e-16" source="p4" target="t1">
+</arc>
+<arc id="e-17" source="p4" target="t4">
+</arc>
+<arc id="e-18" source="t4" target="p5">
+</arc>
+<arc id="e-19" source="t1" target="p5">
+</arc>
+<arc id="e-20" source="p5" target="t3">
+</arc>
+<place id="p6">
+<name>
+<text>p6</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="645" y="420"/>
+</graphics>
+</place>
+<place id="p7">
+<name>
+<text>p7</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="560" y="590"/>
+</graphics>
+</place>
+<place id="p8">
+<name>
+<text>p8</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="725" y="590"/>
+</graphics>
+<initialMarking>
+<text>011</text>
+</initialMarking>
+</place>
+<place id="p9">
+<name>
+<text>p9</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="800" y="590"/>
+</graphics>
+<initialMarking>
+<text>011</text>
+</initialMarking>
+</place>
+<place id="p10">
+<name>
+<text>p10</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="970" y="590"/>
+</graphics>
+</place>
+<transition id="t5">
+<name>
+<text>t5</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="750" y="500"/>
+</graphics>
+</transition>
+<transition id="t6">
+<name>
+<text>t6</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="640" y="670"/>
+</graphics>
+</transition>
+<transition id="t7">
+<name>
+<text>t7</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="885" y="670"/>
+</graphics>
+</transition>
+<transition id="t8">
+<name>
+<text>t8</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="885" y="590"/>
+</graphics>
+</transition>
+<arc id="e-21" source="t5" target="p6">
+</arc>
+<arc id="e-23" source="t5" target="p7">
+</arc>
+<arc id="e-24" source="p7" target="t6">
+</arc>
+<arc id="e-25" source="t6" target="p8">
+</arc>
+<arc id="e-26" source="p8" target="t5">
+</arc>
+<arc id="e-27" source="t7" target="p9">
+</arc>
+<arc id="e-28" source="p9" target="t5">
+</arc>
+<arc id="e-29" source="p9" target="t8">
+</arc>
+<arc id="e-30" source="t8" target="p10">
+</arc>
+<arc id="e-31" source="t5" target="p10">
+</arc>
+<arc id="e-32" source="p10" target="t7">
+</arc>
+<place id="p11">
+<name>
+<text>p11</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="1145" y="420"/>
+</graphics>
+</place>
+<place id="p12">
+<name>
+<text>p12</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="1060" y="590"/>
+</graphics>
+</place>
+<place id="p13">
+<name>
+<text>p13</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="1225" y="590"/>
+</graphics>
+<initialMarking>
+<text>011</text>
+</initialMarking>
+</place>
+<place id="p14">
+<name>
+<text>p14</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="1300" y="590"/>
+</graphics>
+<initialMarking>
+<text>011</text>
+</initialMarking>
+</place>
+<place id="p15">
+<name>
+<text>p15</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="1470" y="590"/>
+</graphics>
+</place>
+<transition id="t9">
+<name>
+<text>t9</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="1250" y="500"/>
+</graphics>
+</transition>
+<transition id="t10">
+<name>
+<text>t10</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="1140" y="670"/>
+</graphics>
+</transition>
+<transition id="t11">
+<name>
+<text>t11</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="1385" y="670"/>
+</graphics>
+</transition>
+<transition id="t12">
+<name>
+<text>t12</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="1385" y="590"/>
+</graphics>
+</transition>
+<arc id="e-33" source="t9" target="p11">
+</arc>
+<arc id="e-35" source="t9" target="p12">
+</arc>
+<arc id="e-36" source="p12" target="t10">
+</arc>
+<arc id="e-37" source="t10" target="p13">
+</arc>
+<arc id="e-38" source="p13" target="t9">
+</arc>
+<arc id="e-39" source="t11" target="p14">
+</arc>
+<arc id="e-40" source="p14" target="t9">
+</arc>
+<arc id="e-41" source="p14" target="t12">
+</arc>
+<arc id="e-42" source="t12" target="p15">
+</arc>
+<arc id="e-43" source="t9" target="p15">
+</arc>
+<arc id="e-44" source="p15" target="t11">
+</arc>
+<place id="p16">
+<name>
+<text>p16</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="1645" y="420"/>
+</graphics>
+</place>
+<place id="p17">
+<name>
+<text>p17</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="1560" y="590"/>
+</graphics>
+</place>
+<place id="p18">
+<name>
+<text>p18</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="1725" y="590"/>
+</graphics>
+<initialMarking>
+<text>011</text>
+</initialMarking>
+</place>
+<place id="p19">
+<name>
+<text>p19</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="1800" y="590"/>
+</graphics>
+<initialMarking>
+<text>011</text>
+</initialMarking>
+</place>
+<place id="p20">
+<name>
+<text>p20</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="1970" y="590"/>
+</graphics>
+</place>
+<transition id="t13">
+<name>
+<text>t13</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="1750" y="500"/>
+</graphics>
+</transition>
+<transition id="t14">
+<name>
+<text>t14</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="1640" y="670"/>
+</graphics>
+</transition>
+<transition id="t15">
+<name>
+<text>t15</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="1885" y="670"/>
+</graphics>
+</transition>
+<transition id="t16">
+<name>
+<text>t16</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="1885" y="590"/>
+</graphics>
+</transition>
+<arc id="e-45" source="t13" target="p16">
+</arc>
+<arc id="e-47" source="t13" target="p17">
+</arc>
+<arc id="e-48" source="p17" target="t14">
+</arc>
+<arc id="e-49" source="t14" target="p18">
+</arc>
+<arc id="e-50" source="p18" target="t13">
+</arc>
+<arc id="e-51" source="t15" target="p19">
+</arc>
+<arc id="e-52" source="p19" target="t13">
+</arc>
+<arc id="e-53" source="p19" target="t16">
+</arc>
+<arc id="e-54" source="t16" target="p20">
+</arc>
+<arc id="e-55" source="t13" target="p20">
+</arc>
+<arc id="e-56" source="p20" target="t15">
+</arc>
+<place id="p21">
+<name>
+<text>p21</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="2145" y="420"/>
+</graphics>
+</place>
+<place id="p22">
+<name>
+<text>p22</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="2060" y="590"/>
+</graphics>
+</place>
+<place id="p23">
+<name>
+<text>p23</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="2225" y="590"/>
+</graphics>
+<initialMarking>
+<text>011</text>
+</initialMarking>
+</place>
+<place id="p24">
+<name>
+<text>p24</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="2300" y="590"/>
+</graphics>
+<initialMarking>
+<text>011</text>
+</initialMarking>
+</place>
+<place id="p25">
+<name>
+<text>p25</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="2470" y="590"/>
+</graphics>
+</place>
+<transition id="t17">
+<name>
+<text>t17</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="2250" y="500"/>
+</graphics>
+</transition>
+<transition id="t18">
+<name>
+<text>t18</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="2140" y="670"/>
+</graphics>
+</transition>
+<transition id="t19">
+<name>
+<text>t19</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="2385" y="670"/>
+</graphics>
+</transition>
+<transition id="t20">
+<name>
+<text>t20</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="2385" y="590"/>
+</graphics>
+</transition>
+<arc id="e-57" source="t17" target="p21">
+</arc>
+<arc id="e-59" source="t17" target="p22">
+</arc>
+<arc id="e-60" source="p22" target="t18">
+</arc>
+<arc id="e-61" source="t18" target="p23">
+</arc>
+<arc id="e-62" source="p23" target="t17">
+</arc>
+<arc id="e-63" source="t19" target="p24">
+</arc>
+<arc id="e-64" source="p24" target="t17">
+</arc>
+<arc id="e-65" source="p24" target="t20">
+</arc>
+<arc id="e-66" source="t20" target="p25">
+</arc>
+<arc id="e-67" source="t17" target="p25">
+</arc>
+<arc id="e-68" source="p25" target="t19">
+</arc>
+<place id="p26">
+<name>
+<text>p26</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="2645" y="420"/>
+</graphics>
+</place>
+<place id="p27">
+<name>
+<text>p27</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="2560" y="590"/>
+</graphics>
+</place>
+<place id="p28">
+<name>
+<text>p28</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="2725" y="590"/>
+</graphics>
+<initialMarking>
+<text>011</text>
+</initialMarking>
+</place>
+<place id="p29">
+<name>
+<text>p29</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="2800" y="590"/>
+</graphics>
+<initialMarking>
+<text>011</text>
+</initialMarking>
+</place>
+<place id="p30">
+<name>
+<text>p30</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="2970" y="590"/>
+</graphics>
+</place>
+<transition id="t21">
+<name>
+<text>t21</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="2750" y="500"/>
+</graphics>
+</transition>
+<transition id="t22">
+<name>
+<text>t22</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="2640" y="670"/>
+</graphics>
+</transition>
+<transition id="t23">
+<name>
+<text>t23</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="2885" y="670"/>
+</graphics>
+</transition>
+<transition id="t24">
+<name>
+<text>t24</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="2885" y="590"/>
+</graphics>
+</transition>
+<arc id="e-69" source="t21" target="p26">
+</arc>
+<arc id="e-71" source="t21" target="p27">
+</arc>
+<arc id="e-72" source="p27" target="t22">
+</arc>
+<arc id="e-73" source="t22" target="p28">
+</arc>
+<arc id="e-74" source="p28" target="t21">
+</arc>
+<arc id="e-75" source="t23" target="p29">
+</arc>
+<arc id="e-76" source="p29" target="t21">
+</arc>
+<arc id="e-77" source="p29" target="t24">
+</arc>
+<arc id="e-78" source="t24" target="p30">
+</arc>
+<arc id="e-79" source="t21" target="p30">
+</arc>
+<arc id="e-80" source="p30" target="t23">
+</arc>
+<place id="p31">
+<name>
+<text>p31</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="3145" y="420"/>
+</graphics>
+</place>
+<place id="p32">
+<name>
+<text>p32</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="3060" y="590"/>
+</graphics>
+</place>
+<place id="p33">
+<name>
+<text>p33</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="3225" y="590"/>
+</graphics>
+<initialMarking>
+<text>011</text>
+</initialMarking>
+</place>
+<place id="p34">
+<name>
+<text>p34</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="3300" y="590"/>
+</graphics>
+<initialMarking>
+<text>011</text>
+</initialMarking>
+</place>
+<place id="p35">
+<name>
+<text>p35</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="3470" y="590"/>
+</graphics>
+</place>
+<transition id="t25">
+<name>
+<text>t25</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="3250" y="500"/>
+</graphics>
+</transition>
+<transition id="t26">
+<name>
+<text>t26</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="3140" y="670"/>
+</graphics>
+</transition>
+<transition id="t27">
+<name>
+<text>t27</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="3385" y="670"/>
+</graphics>
+</transition>
+<transition id="t28">
+<name>
+<text>t28</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="3385" y="590"/>
+</graphics>
+</transition>
+<arc id="e-81" source="t25" target="p31">
+</arc>
+<arc id="e-83" source="t25" target="p32">
+</arc>
+<arc id="e-84" source="p32" target="t26">
+</arc>
+<arc id="e-85" source="t26" target="p33">
+</arc>
+<arc id="e-86" source="p33" target="t25">
+</arc>
+<arc id="e-87" source="t27" target="p34">
+</arc>
+<arc id="e-88" source="p34" target="t25">
+</arc>
+<arc id="e-89" source="p34" target="t28">
+</arc>
+<arc id="e-90" source="t28" target="p35">
+</arc>
+<arc id="e-91" source="t25" target="p35">
+</arc>
+<arc id="e-92" source="p35" target="t27">
+</arc>
+<place id="p36">
+<name>
+<text>p36</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="3645" y="420"/>
+</graphics>
+</place>
+<place id="p37">
+<name>
+<text>p37</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="3560" y="590"/>
+</graphics>
+</place>
+<place id="p38">
+<name>
+<text>p38</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="3725" y="590"/>
+</graphics>
+<initialMarking>
+<text>011</text>
+</initialMarking>
+</place>
+<place id="p39">
+<name>
+<text>p39</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="3800" y="590"/>
+</graphics>
+<initialMarking>
+<text>011</text>
+</initialMarking>
+</place>
+<place id="p40">
+<name>
+<text>p40</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="3970" y="590"/>
+</graphics>
+</place>
+<transition id="t29">
+<name>
+<text>t29</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="3750" y="500"/>
+</graphics>
+</transition>
+<transition id="t30">
+<name>
+<text>t30</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="3640" y="670"/>
+</graphics>
+</transition>
+<transition id="t31">
+<name>
+<text>t31</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="3885" y="670"/>
+</graphics>
+</transition>
+<transition id="t32">
+<name>
+<text>t32</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="3885" y="590"/>
+</graphics>
+</transition>
+<arc id="e-93" source="t29" target="p36">
+</arc>
+<arc id="e-95" source="t29" target="p37">
+</arc>
+<arc id="e-96" source="p37" target="t30">
+</arc>
+<arc id="e-97" source="t30" target="p38">
+</arc>
+<arc id="e-98" source="p38" target="t29">
+</arc>
+<arc id="e-99" source="t31" target="p39">
+</arc>
+<arc id="e-100" source="p39" target="t29">
+</arc>
+<arc id="e-101" source="p39" target="t32">
+</arc>
+<arc id="e-102" source="t32" target="p40">
+</arc>
+<arc id="e-103" source="t29" target="p40">
+</arc>
+<arc id="e-104" source="p40" target="t31">
+</arc>
+<place id="p41">
+<name>
+<text>p41</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="4145" y="420"/>
+</graphics>
+</place>
+<place id="p42">
+<name>
+<text>p42</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="4060" y="590"/>
+</graphics>
+</place>
+<place id="p43">
+<name>
+<text>p43</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="4225" y="590"/>
+</graphics>
+<initialMarking>
+<text>011</text>
+</initialMarking>
+</place>
+<place id="p44">
+<name>
+<text>p44</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="4300" y="590"/>
+</graphics>
+<initialMarking>
+<text>011</text>
+</initialMarking>
+</place>
+<place id="p45">
+<name>
+<text>p45</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="4470" y="590"/>
+</graphics>
+</place>
+<transition id="t33">
+<name>
+<text>t33</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="4250" y="500"/>
+</graphics>
+</transition>
+<transition id="t34">
+<name>
+<text>t34</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="4140" y="670"/>
+</graphics>
+</transition>
+<transition id="t35">
+<name>
+<text>t35</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="4385" y="670"/>
+</graphics>
+</transition>
+<transition id="t36">
+<name>
+<text>t36</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="4385" y="590"/>
+</graphics>
+</transition>
+<arc id="e-105" source="t33" target="p41">
+</arc>
+<arc id="e-107" source="t33" target="p42">
+</arc>
+<arc id="e-108" source="p42" target="t34">
+</arc>
+<arc id="e-109" source="t34" target="p43">
+</arc>
+<arc id="e-110" source="p43" target="t33">
+</arc>
+<arc id="e-111" source="t35" target="p44">
+</arc>
+<arc id="e-112" source="p44" target="t33">
+</arc>
+<arc id="e-113" source="p44" target="t36">
+</arc>
+<arc id="e-114" source="t36" target="p45">
+</arc>
+<arc id="e-115" source="t33" target="p45">
+</arc>
+<arc id="e-116" source="p45" target="t35">
+</arc>
+<place id="p46">
+<name>
+<text>p46</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="4645" y="420"/>
+</graphics>
+</place>
+<place id="p47">
+<name>
+<text>p47</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="4560" y="590"/>
+</graphics>
+</place>
+<place id="p48">
+<name>
+<text>p48</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="4725" y="590"/>
+</graphics>
+<initialMarking>
+<text>011</text>
+</initialMarking>
+</place>
+<place id="p49">
+<name>
+<text>p49</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="4800" y="590"/>
+</graphics>
+<initialMarking>
+<text>011</text>
+</initialMarking>
+</place>
+<place id="p50">
+<name>
+<text>p50</text>
+<graphics>
+<offset x="-10" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="4970" y="590"/>
+</graphics>
+</place>
+<transition id="t37">
+<name>
+<text>t37</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="4750" y="500"/>
+</graphics>
+</transition>
+<transition id="t38">
+<name>
+<text>t38</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="4640" y="670"/>
+</graphics>
+</transition>
+<transition id="t39">
+<name>
+<text>t39</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="4885" y="670"/>
+</graphics>
+</transition>
+<transition id="t40">
+<name>
+<text>t40</text>
+<graphics>
+<offset x="0" y="0"/>
+</graphics>
+</name>
+<graphics>
+<position x="4885" y="590"/>
+</graphics>
+</transition>
+<arc id="e-117" source="t37" target="p46">
+</arc>
+<arc id="e-119" source="t37" target="p47">
+</arc>
+<arc id="e-120" source="p47" target="t38">
+</arc>
+<arc id="e-121" source="t38" target="p48">
+</arc>
+<arc id="e-122" source="p48" target="t37">
+</arc>
+<arc id="e-123" source="t39" target="p49">
+</arc>
+<arc id="e-124" source="p49" target="t37">
+</arc>
+<arc id="e-125" source="p49" target="t40">
+</arc>
+<arc id="e-126" source="t40" target="p50">
+</arc>
+<arc id="e-127" source="t37" target="p50">
+</arc>
+<arc id="e-128" source="p50" target="t39">
+</arc>
+<arc id="e-22" source="p6" target="t1">
+</arc>
+<arc id="e-34" source="p11" target="t5">
+</arc>
+<arc id="e-46" source="p16" target="t9">
+</arc>
+<arc id="e-58" source="p21" target="t13">
+</arc>
+<arc id="e-70" source="p26" target="t17">
+</arc>
+<arc id="e-82" source="p31" target="t21">
+</arc>
+<arc id="e-94" source="p36" target="t25">
+</arc>
+<arc id="e-106" source="p" target="t29">
+</arc>
+</page>
+</net>
+</pnml>

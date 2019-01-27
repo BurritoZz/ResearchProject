@@ -1,0 +1,13 @@
+!creator pnml2nupn 1.5.3
+!multiple_initial_tokens #5 #1 5...5
+places #3 0...2
+initial place 0
+units #4 0...3
+root unit 3
+U0 #1 0...0 #0
+U1 #1 1...1 #0
+U2 #1 2...2 #0
+U3 #0 1...0 #3 0 1 2
+transitions #2 0...1
+T0 #1 0 #1 1
+T1 #2 0 2 #2 1 2

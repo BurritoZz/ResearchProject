@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+  <net type="http://www.pnml.org/version-2009/grammar/ptnet" id="do26"><page id="do26_paged">
+    <name>
+      <text>A simple computer system</text>
+    </name>
+    <transition id="tr2">
+      <name>
+        <text>A job is put in input queue</text>
+      </name>
+      <graphics>
+        <position x="16" y="16"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr7">
+      <name>
+        <text>A job is started</text>
+      </name>
+      <graphics>
+        <position x="49" y="148"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr8">
+      <name>
+        <text>A job is completed</text>
+      </name>
+      <graphics>
+        <position x="49" y="280"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr12">
+      <name>
+        <text>A job is output</text>
+      </name>
+      <graphics>
+        <position x="16" y="412"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <place id="pl3">
+      <name>
+        <text>An job is waiting</text>
+      </name>
+      <graphics>
+        <position x="16" y="82"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl4">
+      <name>
+        <text>A job is waiting to be output</text>
+      </name>
+      <graphics>
+        <position x="16" y="346"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl6">
+      <name>
+        <text>A job is being processed</text>
+      </name>
+      <graphics>
+        <position x="49" y="214"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl1">
+      <name>
+        <text>The processor is idle</text>
+      </name>
+      <graphics>
+        <position x="115" y="115"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <arc id="a4" source="tr2" target="pl3"/>
+    <arc id="a7" source="pl3" target="tr7">
+      <graphics>
+        <position x="49" y="115"/>
+      </graphics>
+    </arc>
+    <arc id="a8" source="tr8" target="pl4">
+      <graphics>
+        <position x="49" y="313"/>
+      </graphics>
+    </arc>
+    <arc id="a9" source="tr7" target="pl6"/>
+    <arc id="a10" source="pl6" target="tr8"/>
+    <arc id="a11" source="pl1" target="tr7">
+      <graphics>
+        <position x="82" y="115"/>
+      </graphics>
+    </arc>
+    <arc id="a12" source="tr8" target="pl1">
+      <graphics>
+        <position x="82" y="313"/>
+        <position x="148" y="313"/>
+        <position x="181" y="280"/>
+        <position x="181" y="148"/>
+        <position x="148" y="115"/>
+      </graphics>
+    </arc>
+    <arc id="a13" source="pl4" target="tr12"/>
+  </page></net>
+</pnml>

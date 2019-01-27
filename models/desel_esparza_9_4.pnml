@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+  <net type="http://www.pnml.org/version-2009/grammar/ptnet" id="dc1"><page id="dc1_paged">
+    <name>
+      <text>A system to illustrate conflict order</text>
+    </name>
+    
+    <transition id="tr1">
+      <name>
+        <text>t1</text>
+      </name>
+      <graphics>
+        <position x="33" y="33"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr2">
+      <name>
+        <text>t2</text>
+      </name>
+      <graphics>
+        <position x="297" y="33"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr3">
+      <name>
+        <text>t5</text>
+      </name>
+      <graphics>
+        <position x="132" y="198"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr4">
+      <name>
+        <text>t3</text>
+      </name>
+      <graphics>
+        <position x="132" y="66"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr5">
+      <name>
+        <text>t4</text>
+      </name>
+      <graphics>
+        <position x="231" y="165"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <place id="pl1">
+      <name>
+        <text>s1</text>
+      </name>
+      <graphics>
+        <position x="198" y="33"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl2">
+      <name>
+        <text>s2</text>
+      </name>
+      <graphics>
+        <position x="33" y="198"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl3">
+      <name>
+        <text>s3</text>
+      </name>
+      <graphics>
+        <position x="297" y="198"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <page id="ip1">
+      <name>
+        <text>cluster c1</text>
+      </name>
+      <graphics>
+        <position x="214" y="49"/>
+        <dimension x="230" y="98"/>
+      </graphics>
+      <toolspecific tool="Yasper" version="1.0.2355.39443">
+        <inline xmlns="">
+          <text>true</text>
+        </inline>
+      </toolspecific>
+    </page>
+    <page id="ip2">
+      <name>
+        <text>cluster c2</text>
+      </name>
+      <graphics>
+        <position x="33" y="115"/>
+        <dimension x="66" y="230"/>
+      </graphics>
+      <toolspecific tool="Yasper" version="1.0.2355.39443">
+        <inline xmlns="">
+          <text>true</text>
+        </inline>
+      </toolspecific>
+    </page>
+    <page id="ip3">
+      <name>
+        <text>cluster c3</text>
+      </name>
+      <graphics>
+        <position x="213" y="180"/>
+        <dimension x="228" y="96"/>
+      </graphics>
+      <toolspecific tool="Yasper" version="1.0.2355.39443">
+        <inline xmlns="">
+          <text>true</text>
+        </inline>
+      </toolspecific>
+    </page>
+    <arc id="a1" source="tr1" target="pl1"/>
+    <arc id="a2" source="pl1" target="tr2"/>
+    <arc id="a3" source="tr3" target="pl2"/>
+    <arc id="a4" source="pl3" target="tr3"/>
+    <arc id="a5" source="pl2" target="tr1"/>
+    <arc id="a6" source="tr2" target="pl3"/>
+    <arc id="a7" source="pl1" target="tr4"/>
+    <arc id="a8" source="tr4" target="pl2"/>
+    <arc id="a9" source="pl3" target="tr5"/>
+    <arc id="a10" source="tr5" target="pl1"/>
+  </page></net>
+</pnml>

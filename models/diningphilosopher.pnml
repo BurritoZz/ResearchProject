@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+  <net type="http://www.pnml.org/version-2009/grammar/ptnet" id="n11"><page id="n11_paged">
+    <name>
+      <text>diningphilosophers.vsd/Page-1</text>
+    </name>
+    <transition id="tr44">
+      <name>
+        <text>takeLeft</text>
+      </name>
+      <graphics>
+        <position x="78" y="12"/>
+        <dimension x="24" y="24"/>
+      </graphics>
+    </transition>
+    <transition id="tr45">
+      <name>
+        <text>takeRight</text>
+      </name>
+      <graphics>
+        <position x="144" y="78"/>
+        <dimension x="24" y="24"/>
+      </graphics>
+    </transition>
+    <transition id="tr46">
+      <name>
+        <text>retLeft</text>
+      </name>
+      <graphics>
+        <position x="78" y="144"/>
+        <dimension x="24" y="24"/>
+      </graphics>
+    </transition>
+    <transition id="tr47">
+      <name>
+        <text>retRight</text>
+      </name>
+      <graphics>
+        <position x="12" y="78"/>
+        <dimension x="24" y="24"/>
+      </graphics>
+    </transition>
+    <place id="pl56">
+      <name>
+        <text>thinking</text>
+      </name>
+      <graphics>
+        <position x="12" y="12"/>
+        <dimension x="24" y="24"/>
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl57">
+      <name>
+        <text>hasLeft</text>
+      </name>
+      <graphics>
+        <position x="144" y="12"/>
+        <dimension x="24" y="24"/>
+      </graphics>
+    </place>
+    <place id="pl58">
+      <name>
+        <text>eating</text>
+      </name>
+      <graphics>
+        <position x="144" y="144"/>
+        <dimension x="24" y="24"/>
+      </graphics>
+    </place>
+    <place id="pl59">
+      <name>
+        <text>hasRight</text>
+      </name>
+      <graphics>
+        <position x="12" y="144"/>
+        <dimension x="24" y="24"/>
+      </graphics>
+    </place>
+    <place id="pl60">
+      <name>
+        <text>  free   Fork</text>
+      </name>
+      <graphics>
+        <position x="78" y="78"/>
+        <dimension x="24" y="24"/>
+      </graphics>
+    </place>
+    <arc id="a1" source="tr44" target="pl57"/>
+    <arc id="a2" source="pl56" target="tr44"/>
+    <arc id="a3" source="pl57" target="tr45"/>
+    <arc id="a4" source="tr45" target="pl58"/>
+    <arc id="a5" source="pl58" target="tr46"/>
+    <arc id="a6" source="tr46" target="pl59"/>
+    <arc id="a7" source="pl60" target="tr45"/>
+    <arc id="a8" source="tr46" target="pl60"/>
+    <arc id="a9" source="tr47" target="pl56"/>
+    <arc id="a10" source="pl59" target="tr47"/>
+    <arc id="a11" source="pl60" target="tr44"/>
+    <arc id="a12" source="tr47" target="pl60"/>
+  </page></net>
+</pnml>

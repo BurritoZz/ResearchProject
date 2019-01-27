@@ -1,0 +1,23 @@
+import pandas
+import math
+
+PartialData = pandas.read_csv("PartialData.csv")
+PartialData['filename']=PartialData['filename'].astype(str)
+mcc = pandas.read_csv("mcc.csv")
+mcc['filename']=mcc['filename'].astype(str)
+
+cols = [ 'Min_tokens_marking', 'Max_tokens_marking', 'Dead_transitions', 'Concurrent_Units', 'Exclusives' ]
+idx = mcc.index[mcc['Exclusives'].isnull()]
+mcc.loc[idx, cols] = mcc.loc[idx, cols].shift(1, axis=1)
+idx = mcc.index[mcc['Min_tokens_marking'].isnull()]
+mcc.loc[idx, ['Min_tokens_marking','Max_tokens_marking']] = mcc['Max_tokens_marking']
+
+Merged = pandas.merge(PartialData, mcc, how='inner', on='filename')
+Merged = Merged[Merged.line_
+
+Merged.to_csv("MergedData.csv")
+
+#print(PartialData)
+#print(mcc)
+print(Merged)
+#print(test)

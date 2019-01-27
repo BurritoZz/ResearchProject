@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+  <net id="RobotManipulation-PT-00020" type="http://www.pnml.org/version-2009/grammar/ptnet">
+    <page id="page0">
+      <name>
+        <text>DefaultPage</text>
+      </name>
+      <place id="initialize">
+        <name>
+          <text>initialize</text>
+        </name>
+      </place>
+      <place id="move">
+        <name>
+          <text>move</text>
+        </name>
+      </place>
+      <place id="moved">
+        <name>
+          <text>moved</text>
+        </name>
+      </place>
+      <place id="off">
+        <name>
+          <text>off</text>
+        </name>
+      </place>
+      <place id="r_stopped">
+        <name>
+          <text>r_stopped</text>
+        </name>
+        <initialMarking>
+          <text>40</text>
+        </initialMarking>
+      </place>
+      <place id="r_active">
+        <name>
+          <text>r_active</text>
+        </name>
+      </place>
+      <place id="r_moving">
+        <name>
+          <text>r_moving</text>
+        </name>
+      </place>
+      <place id="p_rdy">
+        <name>
+          <text>p_rdy</text>
+        </name>
+      </place>
+      <place id="p_sc">
+        <name>
+          <text>p_sc</text>
+        </name>
+      </place>
+      <place id="p_m">
+        <name>
+          <text>p_m</text>
+        </name>
+      </place>
+      <place id="p_rel">
+        <name>
+          <text>p_rel</text>
+        </name>
+      </place>
+      <place id="access">
+        <name>
+          <text>access</text>
+        </name>
+        <initialMarking>
+          <text>40</text>
+        </initialMarking>
+      </place>
+      <place id="p_i1">
+        <name>
+          <text>p_i1</text>
+        </name>
+        <initialMarking>
+          <text>41</text>
+        </initialMarking>
+      </place>
+      <place id="initialized">
+        <name>
+          <text>initialized</text>
+        </name>
+      </place>
+      <place id="p_i2">
+        <name>
+          <text>p_i2</text>
+        </name>
+      </place>
+      <transition id="r_starts">
+        <name>
+          <text>r_starts</text>
+        </name>
+      </transition>
+      <transition id="r_begin_move">
+        <name>
+          <text>r_begin_move</text>
+        </name>
+      </transition>
+      <transition id="r_end_move">
+        <name>
+          <text>r_end_move</text>
+        </name>
+      </transition>
+      <transition id="r_stops">
+        <name>
+          <text>r_stops</text>
+        </name>
+      </transition>
+      <transition id="p_intoSC">
+        <name>
+          <text>p_intoSC</text>
+        </name>
+      </transition>
+      <transition id="p_move">
+        <name>
+          <text>p_move</text>
+        </name>
+      </transition>
+      <transition id="p_moved">
+        <name>
+          <text>p_moved</text>
+        </name>
+      </transition>
+      <transition id="p_sop">
+        <name>
+          <text>p_sop</text>
+        </name>
+      </transition>
+      <transition id="p_relSC">
+        <name>
+          <text>p_relSC</text>
+        </name>
+      </transition>
+      <transition id="p_start">
+        <name>
+          <text>p_start</text>
+        </name>
+      </transition>
+      <transition id="p_started">
+        <name>
+          <text>p_started</text>
+        </name>
+      </transition>
+      <arc id="cId-7614652676962254168105" source="r_stopped" target="r_starts">
+      </arc>
+      <arc id="cId-7624567580557326232106" source="initialize" target="r_starts">
+      </arc>
+      <arc id="cId-7624567580557326232108" source="r_starts" target="r_active">
+      </arc>
+      <arc id="cId-7624567580557326232110" source="move" target="r_begin_move">
+      </arc>
+      <arc id="cId-7624567580557326232111" source="r_active" target="r_begin_move">
+      </arc>
+      <arc id="cId-7624567580557326232114" source="r_begin_move" target="r_moving">
+      </arc>
+      <arc id="cId-7624567580557326232115" source="r_moving" target="r_end_move">
+      </arc>
+      <arc id="cId-7624567580557326232117" source="r_active" target="r_stops">
+      </arc>
+      <arc id="cId-7624567580557326232118" source="off" target="r_stops">
+      </arc>
+      <arc id="cId-7624567580557326232119" source="r_stops" target="r_stopped">
+      </arc>
+      <arc id="cId-7624567580557326232121" source="r_end_move" target="moved">
+      </arc>
+      <arc id="cId-7624567580557326232122" source="r_end_move" target="r_active">
+      </arc>
+      <arc id="cId-7624567580557326232130" source="p_rdy" target="p_intoSC">
+      </arc>
+      <arc id="cId-7624567580557326232131" source="p_intoSC" target="p_sc">
+      </arc>
+      <arc id="cId-7624567580557326232132" source="p_sc" target="p_move">
+      </arc>
+      <arc id="cId-7624567580557326232133" source="p_move" target="p_m">
+      </arc>
+      <arc id="cId-7624567580557326232134" source="p_m" target="p_moved">
+      </arc>
+      <arc id="cId-7624567580557326232136" source="p_move" target="move">
+      </arc>
+      <arc id="cId-7624567580557326232137" source="moved" target="p_moved">
+      </arc>
+      <arc id="cId-7626220063774010360145" source="p_moved" target="p_rel">
+      </arc>
+      <arc id="cId-7626220063774010360147" source="p_rel" target="p_relSC">
+      </arc>
+      <arc id="cId-7626220063774010360149" source="access" target="p_intoSC">
+      </arc>
+      <arc id="cId-7626220063774010360150" source="p_relSC" target="access">
+      </arc>
+      <arc id="cId-7626220063774010360158" source="p_start" target="initialize">
+      </arc>
+      <arc id="cId-7626220063774010360159" source="p_sop" target="off">
+      </arc>
+      <arc id="cId-7626220063774010360160" source="p_i1" target="p_start">
+      </arc>
+      <arc id="cId-7626220063774010360162" source="p_rdy" target="p_sop">
+      </arc>
+      <arc id="cId-7626220063774010360163" source="p_sop" target="p_i1">
+      </arc>
+      <arc id="cId-7626220063774010360173" source="r_starts" target="initialized">
+      </arc>
+      <arc id="cId-7626220063774010360177" source="p_start" target="p_i2">
+      </arc>
+      <arc id="cId-7626220063774010360178" source="p_i2" target="p_started">
+      </arc>
+      <arc id="cId-7626220063774010360179" source="p_started" target="p_rdy">
+      </arc>
+      <arc id="cId-7626220063774010360180" source="initialized" target="p_started">
+      </arc>
+      <arc id="cId-7626220063774010360181" source="p_relSC" target="p_rdy">
+      </arc>
+    </page>
+    <name>
+      <text>RobotManipulation-PT-00020</text>
+    </name>
+  </net>
+</pnml>

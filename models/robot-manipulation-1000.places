@@ -1,0 +1,15 @@
+4 r_stopped
+11 access
+12 p_i1
+0 initialize
+1 move
+2 moved
+3 off
+5 r_active
+6 r_moving
+7 p_rdy
+8 p_sc
+9 p_m
+10 p_rel
+13 initialized
+14 p_i2

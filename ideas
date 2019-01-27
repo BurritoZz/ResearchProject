@@ -1,0 +1,47 @@
+Flow-graph analysis of compiled binaries
+Does compiler-optimised code alawys do the same as un-optimised code even though it is faster?
+
+Concrete assignments:
+ - Smarter sampling for more optimal decisions
+    -> Create a smart sampling algorithm which balances the precision per scheduler versus the amount of remaining schedulers.
+       This will help check formal models for verification and performance evaluation in a more efficient way.
+       You will work with lightweight scheduler sampling, a new method implemented in the modes simulator.
+       Prerequisites: Basic probability theory and some programming experience.
+ - Can machine learning automatically choose your best Model Checking Strategy?
+    -> Find out if a classifier can exist which can predict which settings will enable a model checker to complete successfully and quickly.
+       We will focus on one model checker (LTSmin) and its many possible arguments as well as hundreds on benchmarks from one type of model (e.g. Petri Nets)
+ - Math to make money: cost-optimising maintenance
+    -> Find out if FMT's new model is valid in practice.
+       This will be tested using a practical case in co-operation with NedTrain, where the aim is to find the lowest-cost maintenance plan.
+ - Stressed systems: Reliability of physical systems under varying loads
+    -> Current models assume that the degradation of components happens over time, regardless of the amount of use of that component
+       The assignment is to extend the model to include a model of the load on the system, and the effects of this load on the degradation of components.
+       This will also be done in co-operation with NedTrain.
+ - Fuzzy Fault Trees
+    -> The analysis of fault trees is often too precise since the input numbers are often not known precisely.
+       Therefore, the outcome is not precise either. This could be solved using Fuzzy logic.
+       The goal of this project is to create a fuzzy framework for fault trees, and to implement fuzzy algorithms in a tool and to evaluate the usefullness of outcomes on a few case studies.
+  - Does your model make sense? Automated validation of timed automata
+     -> Timed automatas are very flexible, but this flexibility allows for many potential mistakes which may not be immediately obvious.
+        The assignment is to develop a system for performing sanity checks on TAs, detecting common mistakes and helping modelers avoid known pitfalls
+ - Bringing ATTop to the Top
+     -> Various tools can be used to model and analyse attack trees. This variety brings compatibility issues between different tools.
+        The assignment is to further develop and improve the ATTop tool by improving its analysis capabilities and its usability to non-experts in formal methods.
+ - Automatic, compositional constrution of Java models
+     -> Models can be constructed to analyse computer programs, however, the construction of such models is non-trivial for real programming languages like Java.
+        This project focuses on using graph transformation to capture the control flow and call structure in Java programs, resulting in a maintainable and extensible definition.
+ - Fair exploration in GROOVE
+     -> When using graphs to model system behaviour, an important aspect is fairness. The property that if a rule can be applied, it will eventually be applied.
+        This allows you to reason about things like tasks sent out will eventually be completed, and the clock will eventually advance to the next minute.
+	This project revolves around developing a solution for this in GROOVE, there are two approaches:
+	  -> Encode fairness using the existing strategies in GROOVE, or show that this cannot be done.
+	  -> Implement fairness as a strategy in GROOVE (or a new primitive with which this is possible)
+ - Sequences for Specification
+     -> Sequences are a mechanism to describe the intended behaviour of a program.
+        This project is about extending the support of sequences in the annotation language of the VerCors program.
+ - A framework for visualisation of fault trees
+     -> The goal of this project is to visualise fault trees, by not only drawing them, but also visualise other properties that apply to them.
+ - Breath-First search: Verifying GPGPU Programs
+     -> This project consists of two parts:
+          -> Design and implement a parallel BFS algorithm and implement it to run on a GPU
+	  -> Verify the correctness of this algorithm

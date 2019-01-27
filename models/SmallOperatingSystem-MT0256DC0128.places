@@ -1,0 +1,9 @@
+0 TaskOnDisk
+1 FreeMemSegment
+2 DiskControllerUnit
+6 CPUUnit
+3 TransferToDisk
+4 TaskReady
+5 TaskSuspended
+7 ExecutingTask
+8 LoadingMem

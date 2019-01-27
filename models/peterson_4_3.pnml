@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+  <net type="http://www.pnml.org/version-2009/grammar/ptnet" id="dc1"><page id="dc1_paged">
+    <name>
+      <text>A conservative net</text>
+    </name>
+    
+    <transition id="tr9">
+      <name>
+        <text>t1</text>
+      </name>
+      <graphics>
+        <position x="71" y="104"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr10">
+      <name>
+        <text>t3</text>
+      </name>
+      <graphics>
+        <position x="71" y="236"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr11">
+      <name>
+        <text>t2</text>
+      </name>
+      <graphics>
+        <position x="335" y="104"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr12">
+      <name>
+        <text>t4</text>
+      </name>
+      <graphics>
+        <position x="335" y="236"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <place id="pl6">
+      <name>
+        <text>p1</text>
+      </name>
+      <graphics>
+        <position x="71" y="38"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl7">
+      <name>
+        <text>p3</text>
+      </name>
+      <graphics>
+        <position x="71" y="170"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl13">
+      <name>
+        <text>p4</text>
+      </name>
+      <graphics>
+        <position x="335" y="170"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl14">
+      <name>
+        <text>p2</text>
+      </name>
+      <graphics>
+        <position x="335" y="38"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl15">
+      <name>
+        <text>p5</text>
+      </name>
+      <graphics>
+        <position x="203" y="170"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <arc id="a13" source="pl6" target="tr9"/>
+    <arc id="a14" source="tr9" target="pl7"/>
+    <arc id="a15" source="pl7" target="tr10"/>
+    <arc id="a16" source="tr11" target="pl13"/>
+    <arc id="a17" source="pl13" target="tr12"/>
+    <arc id="a18" source="tr12" target="pl14">
+      <graphics>
+        <position x="368" y="269"/>
+        <position x="401" y="236"/>
+        <position x="401" y="38"/>
+        <position x="368" y="5"/>
+      </graphics>
+    </arc>
+    <arc id="a19" source="pl15" target="tr11">
+      <graphics>
+        <position x="302" y="71"/>
+      </graphics>
+    </arc>
+    <arc id="a20" source="tr10" target="pl6">
+      <graphics>
+        <position x="38" y="269"/>
+        <position x="5" y="236"/>
+        <position x="5" y="38"/>
+        <position x="38" y="5"/>
+      </graphics>
+    </arc>
+    <arc id="a21" source="pl14" target="tr11"/>
+    <arc id="a22" source="tr12" target="pl15">
+      <graphics>
+        <position x="302" y="269"/>
+      </graphics>
+    </arc>
+    <arc id="a23" source="pl15" target="tr9">
+      <graphics>
+        <position x="104" y="71"/>
+      </graphics>
+    </arc>
+    <arc id="a24" source="tr10" target="pl15">
+      <graphics>
+        <position x="104" y="269"/>
+      </graphics>
+    </arc>
+  </page></net>
+</pnml>

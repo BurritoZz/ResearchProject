@@ -1,0 +1,808 @@
+<?xml version="1.0"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+ <net id="DoubleExponent-PT-001" type="http://www.pnml.org/version-2009/grammar/ptnet">
+  <name>
+   <text>DoubleExponent-PT-001</text>
+  </name>
+ <page id="g-1510-7A4B6-1">
+  <place id="p1">
+  <name>
+   <text>p1</text>
+  </name>
+   <initialMarking>
+    <text>1</text>
+   </initialMarking>
+  </place>
+  <place id="p10">
+  <name>
+   <text>p10</text>
+  </name>
+  </place>
+  <place id="p11">
+  <name>
+   <text>p11</text>
+  </name>
+  </place>
+  <place id="p12">
+  <name>
+   <text>p12</text>
+  </name>
+  </place>
+  <place id="p13">
+  <name>
+   <text>p13</text>
+  </name>
+  </place>
+  <place id="p14">
+  <name>
+   <text>p14</text>
+  </name>
+  </place>
+  <place id="p15">
+  <name>
+   <text>p15</text>
+  </name>
+  </place>
+  <place id="p16">
+  <name>
+   <text>p16</text>
+  </name>
+  </place>
+  <place id="p17">
+  <name>
+   <text>p17</text>
+  </name>
+  </place>
+  <place id="p18">
+  <name>
+   <text>p18</text>
+  </name>
+  </place>
+  <place id="p19">
+  <name>
+   <text>p19</text>
+  </name>
+  </place>
+  <place id="p2">
+  <name>
+   <text>p2</text>
+  </name>
+  </place>
+  <place id="p20">
+  <name>
+   <text>p20</text>
+  </name>
+  </place>
+  <place id="p21">
+  <name>
+   <text>p21</text>
+  </name>
+  </place>
+  <place id="p22">
+  <name>
+   <text>p22</text>
+  </name>
+  </place>
+  <place id="p23">
+  <name>
+   <text>p23</text>
+  </name>
+  </place>
+  <place id="p24">
+  <name>
+   <text>p24</text>
+  </name>
+  </place>
+  <place id="p25">
+  <name>
+   <text>p25</text>
+  </name>
+  </place>
+  <place id="p26">
+  <name>
+   <text>p26</text>
+  </name>
+  </place>
+  <place id="p27">
+  <name>
+   <text>p27</text>
+  </name>
+  </place>
+  <place id="p28">
+  <name>
+   <text>p28</text>
+  </name>
+  </place>
+  <place id="p29">
+  <name>
+   <text>p29</text>
+  </name>
+  </place>
+  <place id="p3">
+  <name>
+   <text>p3</text>
+  </name>
+  </place>
+  <place id="p30">
+  <name>
+   <text>p30</text>
+  </name>
+  </place>
+  <place id="p31">
+  <name>
+   <text>p31</text>
+  </name>
+  </place>
+  <place id="p32">
+  <name>
+   <text>p32</text>
+  </name>
+  </place>
+  <place id="p33">
+  <name>
+   <text>p33</text>
+  </name>
+  </place>
+  <place id="p34">
+  <name>
+   <text>p34</text>
+  </name>
+  </place>
+  <place id="p35">
+  <name>
+   <text>p35</text>
+  </name>
+  </place>
+  <place id="p36">
+  <name>
+   <text>p36</text>
+  </name>
+  </place>
+  <place id="p37">
+  <name>
+   <text>p37</text>
+  </name>
+  </place>
+  <place id="p38">
+  <name>
+   <text>p38</text>
+  </name>
+  </place>
+  <place id="p39">
+  <name>
+   <text>p39</text>
+  </name>
+  </place>
+  <place id="p4">
+  <name>
+   <text>p4</text>
+  </name>
+  </place>
+  <place id="p40">
+  <name>
+   <text>p40</text>
+  </name>
+  </place>
+  <place id="p41">
+  <name>
+   <text>p41</text>
+  </name>
+  </place>
+  <place id="p42">
+  <name>
+   <text>p42</text>
+  </name>
+  </place>
+  <place id="p43">
+  <name>
+   <text>p43</text>
+  </name>
+  </place>
+  <place id="p44">
+  <name>
+   <text>p44</text>
+  </name>
+  </place>
+  <place id="p45">
+  <name>
+   <text>p45</text>
+  </name>
+  </place>
+  <place id="p46">
+  <name>
+   <text>p46</text>
+  </name>
+  </place>
+  <place id="p47">
+  <name>
+   <text>p47</text>
+  </name>
+  </place>
+  <place id="p48">
+  <name>
+   <text>p48</text>
+  </name>
+  </place>
+  <place id="p49">
+  <name>
+   <text>p49</text>
+  </name>
+  </place>
+  <place id="p5">
+  <name>
+   <text>p5</text>
+  </name>
+  </place>
+  <place id="p50">
+  <name>
+   <text>p50</text>
+  </name>
+  </place>
+  <place id="p51">
+  <name>
+   <text>p51</text>
+  </name>
+  </place>
+  <place id="p52">
+  <name>
+   <text>p52</text>
+  </name>
+  </place>
+  <place id="p53">
+  <name>
+   <text>p53</text>
+  </name>
+  </place>
+  <place id="p54">
+  <name>
+   <text>p54</text>
+  </name>
+  </place>
+  <place id="p55">
+  <name>
+   <text>p55</text>
+  </name>
+  </place>
+  <place id="p56">
+  <name>
+   <text>p56</text>
+  </name>
+  </place>
+  <place id="p57">
+  <name>
+   <text>p57</text>
+  </name>
+  </place>
+  <place id="p6">
+  <name>
+   <text>p6</text>
+  </name>
+  </place>
+  <place id="p7">
+  <name>
+   <text>p7</text>
+  </name>
+  </place>
+  <place id="p8">
+  <name>
+   <text>p8</text>
+  </name>
+  </place>
+  <place id="p9">
+  <name>
+   <text>p9</text>
+  </name>
+  </place>
+  <transition id="t1">
+  <name>
+   <text>t1</text>
+  </name>
+  </transition>
+  <transition id="t10">
+  <name>
+   <text>t10</text>
+  </name>
+  </transition>
+  <transition id="t11">
+  <name>
+   <text>t11</text>
+  </name>
+  </transition>
+  <transition id="t12">
+  <name>
+   <text>t12</text>
+  </name>
+  </transition>
+  <transition id="t13">
+  <name>
+   <text>t13</text>
+  </name>
+  </transition>
+  <transition id="t14">
+  <name>
+   <text>t14</text>
+  </name>
+  </transition>
+  <transition id="t15">
+  <name>
+   <text>t15</text>
+  </name>
+  </transition>
+  <transition id="t16">
+  <name>
+   <text>t16</text>
+  </name>
+  </transition>
+  <transition id="t17">
+  <name>
+   <text>t17</text>
+  </name>
+  </transition>
+  <transition id="t18">
+  <name>
+   <text>t18</text>
+  </name>
+  </transition>
+  <transition id="t19">
+  <name>
+   <text>t19</text>
+  </name>
+  </transition>
+  <transition id="t2">
+  <name>
+   <text>t2</text>
+  </name>
+  </transition>
+  <transition id="t20">
+  <name>
+   <text>t20</text>
+  </name>
+  </transition>
+  <transition id="t21">
+  <name>
+   <text>t21</text>
+  </name>
+  </transition>
+  <transition id="t22">
+  <name>
+   <text>t22</text>
+  </name>
+  </transition>
+  <transition id="t23">
+  <name>
+   <text>t23</text>
+  </name>
+  </transition>
+  <transition id="t24">
+  <name>
+   <text>t24</text>
+  </name>
+  </transition>
+  <transition id="t25">
+  <name>
+   <text>t25</text>
+  </name>
+  </transition>
+  <transition id="t26">
+  <name>
+   <text>t26</text>
+  </name>
+  </transition>
+  <transition id="t27">
+  <name>
+   <text>t27</text>
+  </name>
+  </transition>
+  <transition id="t28">
+  <name>
+   <text>t28</text>
+  </name>
+  </transition>
+  <transition id="t29">
+  <name>
+   <text>t29</text>
+  </name>
+  </transition>
+  <transition id="t3">
+  <name>
+   <text>t3</text>
+  </name>
+  </transition>
+  <transition id="t30">
+  <name>
+   <text>t30</text>
+  </name>
+  </transition>
+  <transition id="t31">
+  <name>
+   <text>t31</text>
+  </name>
+  </transition>
+  <transition id="t32">
+  <name>
+   <text>t32</text>
+  </name>
+  </transition>
+  <transition id="t33">
+  <name>
+   <text>t33</text>
+  </name>
+  </transition>
+  <transition id="t34">
+  <name>
+   <text>t34</text>
+  </name>
+  </transition>
+  <transition id="t35">
+  <name>
+   <text>t35</text>
+  </name>
+  </transition>
+  <transition id="t36">
+  <name>
+   <text>t36</text>
+  </name>
+  </transition>
+  <transition id="t37">
+  <name>
+   <text>t37</text>
+  </name>
+  </transition>
+  <transition id="t38">
+  <name>
+   <text>t38</text>
+  </name>
+  </transition>
+  <transition id="t39">
+  <name>
+   <text>t39</text>
+  </name>
+  </transition>
+  <transition id="t4">
+  <name>
+   <text>t4</text>
+  </name>
+  </transition>
+  <transition id="t40">
+  <name>
+   <text>t40</text>
+  </name>
+  </transition>
+  <transition id="t41">
+  <name>
+   <text>t41</text>
+  </name>
+  </transition>
+  <transition id="t42">
+  <name>
+   <text>t42</text>
+  </name>
+  </transition>
+  <transition id="t43">
+  <name>
+   <text>t43</text>
+  </name>
+  </transition>
+  <transition id="t44">
+  <name>
+   <text>t44</text>
+  </name>
+  </transition>
+  <transition id="t45">
+  <name>
+   <text>t45</text>
+  </name>
+  </transition>
+  <transition id="t46">
+  <name>
+   <text>t46</text>
+  </name>
+  </transition>
+  <transition id="t47">
+  <name>
+   <text>t47</text>
+  </name>
+  </transition>
+  <transition id="t48">
+  <name>
+   <text>t48</text>
+  </name>
+  </transition>
+  <transition id="t5">
+  <name>
+   <text>t5</text>
+  </name>
+  </transition>
+  <transition id="t6">
+  <name>
+   <text>t6</text>
+  </name>
+  </transition>
+  <transition id="t7">
+  <name>
+   <text>t7</text>
+  </name>
+  </transition>
+  <transition id="t8">
+  <name>
+   <text>t8</text>
+  </name>
+  </transition>
+  <transition id="t9">
+  <name>
+   <text>t9</text>
+  </name>
+  </transition>
+  <arc id="e-1510-7A628-107" source="p1" target="t1">
+  </arc>
+  <arc id="e-1510-7A62B-108" source="p18" target="t12">
+  </arc>
+  <arc id="e-1510-7A62D-109" source="p46" target="t41">
+  </arc>
+  <arc id="e-1510-7A62F-110" source="t41" target="p47">
+  </arc>
+  <arc id="e-1510-7A633-111" source="p47" target="t42">
+  </arc>
+  <arc id="e-1510-7A635-112" source="t42" target="p43">
+  </arc>
+  <arc id="e-1510-7A636-113" source="p47" target="t43">
+  </arc>
+  <arc id="e-1510-7A638-114" source="t43" target="p48">
+  </arc>
+  <arc id="e-1510-7A63A-115" source="t43" target="p50">
+  </arc>
+  <arc id="e-1510-7A63C-116" source="p48" target="t44">
+  </arc>
+  <arc id="e-1510-7A63D-117" source="p54" target="t44">
+  </arc>
+  <arc id="e-1510-7A63F-118" source="t44" target="p49">
+  </arc>
+  <arc id="e-1510-7A640-119" source="t12" target="p19">
+  </arc>
+  <arc id="e-1510-7A642-120" source="p12" target="t45">
+  </arc>
+  <arc id="e-1510-7A644-121" source="p50" target="t45">
+  </arc>
+  <arc id="e-1510-7A646-122" source="t45" target="p51">
+  </arc>
+  <arc id="e-1510-7A64A-123" source="p51" target="t46">
+  </arc>
+  <arc id="e-1510-7A64B-124" source="t46" target="p13">
+  </arc>
+  <arc id="e-1510-7A64D-125" source="t46" target="p52">
+  </arc>
+  <arc id="e-1510-7A64F-126" source="p12" target="t47">
+  </arc>
+  <arc id="e-1510-7A651-127" source="p52" target="t47">
+  </arc>
+  <arc id="e-1510-7A652-128" source="t47" target="p53">
+  </arc>
+  <arc id="e-1510-7A654-129" source="p53" target="t48">
+  </arc>
+  <arc id="e-1510-7A656-130" source="t12" target="p55">
+  </arc>
+  <arc id="e-1510-7A657-131" source="t48" target="p13">
+  </arc>
+  <arc id="e-1510-7A659-132" source="t48" target="p54">
+  </arc>
+  <arc id="e-1510-7A671-133" source="p5" target="t5">
+  </arc>
+  <arc id="e-1510-7A673-134" source="t5" target="p10">
+  </arc>
+  <arc id="e-1510-7A68B-135" source="t5" target="p6">
+  </arc>
+  <arc id="e-1510-7A68C-136" source="p6" target="t6">
+  </arc>
+  <arc id="e-1510-7A68E-137" source="t6" target="p13">
+  </arc>
+  <arc id="e-1510-7A68F-138" source="t6" target="p7">
+  </arc>
+  <arc id="e-1510-7A691-139" source="p7" target="t7">
+  </arc>
+  <arc id="e-1510-7A693-140" source="t7" target="p14">
+  </arc>
+  <arc id="e-1510-7A694-141" source="p19" target="t13">
+  </arc>
+  <arc id="e-1510-7A6A3-142" source="p14" target="t8">
+  </arc>
+  <arc id="e-1510-7A6A5-143" source="p8" target="t8">
+  </arc>
+  <arc id="e-1510-7A6A7-144" source="t8" target="p15">
+  </arc>
+  <arc id="e-1510-7A6A8-145" source="p15" target="t9">
+  </arc>
+  <arc id="e-1510-7A6AA-146" source="t9" target="p16">
+  </arc>
+  <arc id="e-1510-7A6AE-147" source="t9" target="p9">
+  </arc>
+  <arc id="e-1510-7A6AF-148" source="t13" target="p20">
+  </arc>
+  <arc id="e-1510-7A6B1-149" source="t13" target="p56">
+  </arc>
+  <arc id="e-1510-7A6B3-150" source="p20" target="t14">
+  </arc>
+  <arc id="e-1510-7A6B4-151" source="t14" target="p21">
+  </arc>
+  <arc id="e-1510-7A6B6-152" source="t14" target="p57">
+  </arc>
+  <arc id="e-1510-7A6B8-153" source="p21" target="t15">
+  </arc>
+  <arc id="e-1510-7A6B9-154" source="t1" target="p2">
+  </arc>
+  <arc id="e-1510-7A6BB-155" source="t15" target="p22">
+  </arc>
+  <arc id="e-1510-7A6BC-156" source="t15" target="p26">
+  </arc>
+  <arc id="e-1510-7A6BE-157" source="p22" target="t16">
+  </arc>
+  <arc id="e-1510-7A6C0-158" source="p30" target="t16">
+  </arc>
+  <arc id="e-1510-7A6C3-159" source="t16" target="p16">
+  </arc>
+  <arc id="e-1510-7A6C5-160" source="p22" target="t17">
+  </arc>
+  <arc id="e-1510-7A6C7-161" source="p37" target="t17">
+  </arc>
+  <arc id="e-1510-7A6C8-162" source="t17" target="p23">
+  </arc>
+  <arc id="e-1510-7A6CA-163" source="p23" target="t18">
+  </arc>
+  <arc id="e-1510-7A6CB-164" source="t18" target="p24">
+  </arc>
+  <arc id="e-1510-7A6CD-165" source="t1" target="p8">
+  </arc>
+  <arc id="e-1510-7A6CF-166" source="t18" target="p38">
+  </arc>
+  <arc id="e-1510-7A6D0-167" source="p24" target="t19">
+  </arc>
+  <arc id="e-1510-7A6D2-168" source="p42" target="t19">
+  </arc>
+  <arc id="e-1510-7A6D3-169" source="t19" target="p14">
+  </arc>
+  <arc id="e-1510-7A6D5-170" source="p2" target="t2">
+  </arc>
+  <arc id="e-1510-7A6D8-171" source="t2" target="p10">
+  </arc>
+  <arc id="e-1510-7A6DA-172" source="t2" target="p3">
+  </arc>
+  <arc id="e-1510-7A6DC-173" source="p24" target="t20">
+  </arc>
+  <arc id="e-1510-7A6DD-174" source="p49" target="t20">
+  </arc>
+  <arc id="e-1510-7A6DF-175" source="t20" target="p25">
+  </arc>
+  <arc id="e-1510-7A6E0-176" source="p10" target="t10">
+  </arc>
+  <arc id="e-1510-7A6E2-177" source="p26" target="t21">
+  </arc>
+  <arc id="e-1510-7A6E4-178" source="t21" target="p27">
+  </arc>
+  <arc id="e-1510-7A6E5-179" source="p27" target="t22">
+  </arc>
+  <arc id="e-1510-7A6E7-180" source="t22" target="p28">
+  </arc>
+  <arc id="e-1510-7A6E8-181" source="p10" target="t23">
+  </arc>
+  <arc id="e-1510-7A6EC-182" source="p28" target="t23">
+  </arc>
+  <arc id="e-1510-7A6EE-183" source="t23" target="p29">
+  </arc>
+  <arc id="e-1510-7A6EF-184" source="p29" target="t24">
+  </arc>
+  <arc id="e-1510-7A6F1-185" source="t24" target="p10">
+  </arc>
+  <arc id="e-1510-7A6F2-186" source="t24" target="p30">
+  </arc>
+  <arc id="e-1510-7A6F4-187" source="p16" target="t10">
+  </arc>
+  <arc id="e-1510-7A6FF-188" source="p27" target="t25">
+  </arc>
+  <arc id="e-1510-7A701-189" source="t25" target="p31">
+  </arc>
+  <arc id="e-1510-7A703-190" source="p11" target="t26">
+  </arc>
+  <arc id="e-1510-7A704-191" source="p31" target="t26">
+  </arc>
+  <arc id="e-1510-7A706-192" source="t26" target="p32">
+  </arc>
+  <arc id="e-1510-7A707-193" source="p32" target="t27">
+  </arc>
+  <arc id="e-1510-7A70C-194" source="t27" target="p10">
+  </arc>
+  <arc id="e-1510-7A70E-195" source="t27" target="p33">
+  </arc>
+  <arc id="e-1510-7A710-196" source="p33" target="t28">
+  </arc>
+  <arc id="e-1510-7A711-197" source="t28" target="p12">
+  </arc>
+  <arc id="e-1510-7A713-198" source="t10" target="p17">
+  </arc>
+  <arc id="e-1510-7A714-199" source="t28" target="p34">
+  </arc>
+  <arc id="e-1510-7A716-200" source="p13" target="t29">
+  </arc>
+  <arc id="e-1510-7A718-201" source="p34" target="t29">
+  </arc>
+  <arc id="e-1510-7A719-202" source="t29" target="p35">
+  </arc>
+  <arc id="e-1510-7A71B-203" source="p3" target="t3">
+  </arc>
+  <arc id="e-1510-7A71C-204" source="t3" target="p13">
+  </arc>
+  <arc id="e-1510-7A71E-205" source="t3" target="p4">
+  </arc>
+  <arc id="e-1510-7A721-206" source="p35" target="t30">
+  </arc>
+  <arc id="e-1510-7A723-207" source="t30" target="p31">
+  </arc>
+  <arc id="e-1510-7A725-208" source="p35" target="t31">
+  </arc>
+  <arc id="e-1510-7A727-209" source="p17" target="t11">
+  </arc>
+  <arc id="e-1510-7A728-210" source="t31" target="p36">
+  </arc>
+  <arc id="e-1510-7A72A-211" source="t31" target="p50">
+  </arc>
+  <arc id="e-1510-7A72B-212" source="p36" target="t32">
+  </arc>
+  <arc id="e-1510-7A72D-213" source="p54" target="t32">
+  </arc>
+  <arc id="e-1510-7A72F-214" source="t32" target="p37">
+  </arc>
+  <arc id="e-1510-7A731-215" source="p38" target="t33">
+  </arc>
+  <arc id="e-1510-7A732-216" source="t33" target="p39">
+  </arc>
+  <arc id="e-1510-7A734-217" source="p39" target="t34">
+  </arc>
+  <arc id="e-1510-7A737-218" source="t34" target="p40">
+  </arc>
+  <arc id="e-1510-7A739-219" source="p40" target="t35">
+  </arc>
+  <arc id="e-1510-7A73B-220" source="t11" target="p11">
+  </arc>
+  <arc id="e-1510-7A73C-221" source="p8" target="t35">
+  </arc>
+  <arc id="e-1510-7A73E-222" source="t35" target="p41">
+  </arc>
+  <arc id="e-1510-7A73F-223" source="p41" target="t36">
+  </arc>
+  <arc id="e-1510-7A741-224" source="t36" target="p42">
+  </arc>
+  <arc id="e-1510-7A743-225" source="t36" target="p8">
+  </arc>
+  <arc id="e-1510-7A744-226" source="p39" target="t37">
+  </arc>
+  <arc id="e-1510-7A746-227" source="t37" target="p43">
+  </arc>
+  <arc id="e-1510-7A747-228" source="p43" target="t38">
+  </arc>
+  <arc id="e-1510-7A749-229" source="p9" target="t38">
+  </arc>
+  <arc id="e-1510-7A74D-230" source="t38" target="p44">
+  </arc>
+  <arc id="e-1510-7A74E-231" source="t11" target="p18">
+  </arc>
+  <arc id="e-1510-7A750-232" source="p44" target="t39">
+  </arc>
+  <arc id="e-1510-7A752-233" source="t39" target="p45">
+  </arc>
+  <arc id="e-1510-7A760-234" source="t39" target="p8">
+  </arc>
+  <arc id="e-1510-7A761-235" source="p4" target="t4">
+  </arc>
+  <arc id="e-1510-7A763-236" source="t4" target="p5">
+  </arc>
+  <arc id="e-1510-7A765-237" source="t4" target="p8">
+  </arc>
+  <arc id="e-1510-7A766-238" source="p45" target="t40">
+  </arc>
+  <arc id="e-1510-7A768-239" source="t40" target="p12">
+  </arc>
+  <arc id="e-1510-7A769-240" source="t40" target="p46">
+  </arc>
+  <arc id="e-1510-7A76B-241" source="p13" target="t41">
+  </arc>
+ </page>
+ </net>
+</pnml>

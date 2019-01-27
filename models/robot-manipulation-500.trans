@@ -1,0 +1,11 @@
+0 r_starts
+1 r_begin_move
+2 r_end_move
+3 r_stops
+4 p_intoSC
+5 p_move
+6 p_moved
+7 p_sop
+8 p_relSC
+9 p_start
+10 p_started

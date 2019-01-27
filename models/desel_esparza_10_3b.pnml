@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+  <net type="http://www.pnml.org/version-2009/grammar/ptnet" id="dc1"><page id="dc1_paged">
+    <name>
+      <text>A non-live, bounded system with two regulation circuits</text>
+    </name>
+    
+    <transition id="tr17">
+      <graphics>
+        <position x="33" y="198"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr18">
+      <graphics>
+        <position x="33" y="396"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr19">
+      <graphics>
+        <position x="231" y="33"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr20">
+      <graphics>
+        <position x="165" y="396"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr21">
+      <graphics>
+        <position x="297" y="396"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr22">
+      <graphics>
+        <position x="165" y="198"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr23">
+      <graphics>
+        <position x="297" y="198"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr24">
+      <graphics>
+        <position x="429" y="198"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr25">
+      <graphics>
+        <position x="429" y="396"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <place id="pl25">
+      <graphics>
+        <position x="33" y="297"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl26">
+      <graphics>
+        <position x="99" y="66"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl27">
+      <graphics>
+        <position x="231" y="495"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl28">
+      <graphics>
+        <position x="165" y="297"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl29">
+      <graphics>
+        <position x="297" y="297"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl30">
+      <graphics>
+        <position x="363" y="66"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl31">
+      <graphics>
+        <position x="363" y="165"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl32">
+      <graphics>
+        <position x="363" y="231"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl33">
+      <graphics>
+        <position x="429" y="297"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl1">
+      <graphics>
+        <position x="99" y="231"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl2">
+      <graphics>
+        <position x="99" y="165"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <page id="ip1">
+      <name>
+        <text>cluster c1</text>
+      </name>
+      <graphics>
+        <position x="99" y="198"/>
+        <dimension x="198" y="132"/>
+      </graphics>
+      <toolspecific tool="Yasper" version="1.0.2356.17081">
+        <inline xmlns="">
+          <text>true</text>
+        </inline>
+      </toolspecific>
+    </page>
+    <page id="ip2">
+      <name>
+        <text>cluster c2</text>
+      </name>
+      <graphics>
+        <position x="363" y="198"/>
+        <dimension x="198" y="132"/>
+      </graphics>
+      <toolspecific tool="Yasper" version="1.0.2356.17081">
+        <inline xmlns="">
+          <text>true</text>
+        </inline>
+      </toolspecific>
+    </page>
+    <page id="ip3">
+      <name>
+        <text>cluster c3</text>
+      </name>
+      <graphics>
+        <position x="231" y="379"/>
+        <dimension x="462" y="98"/>
+      </graphics>
+      <toolspecific tool="Yasper" version="1.0.2356.17081">
+        <inline xmlns="">
+          <text>true</text>
+        </inline>
+      </toolspecific>
+    </page>
+    <page id="ip4">
+      <name>
+        <text>cluster c0</text>
+      </name>
+      <graphics>
+        <position x="231" y="49"/>
+        <dimension x="330" y="98"/>
+      </graphics>
+      <toolspecific tool="Yasper" version="1.0.2356.17081">
+        <inline xmlns="">
+          <text>true</text>
+        </inline>
+      </toolspecific>
+    </page>
+    <arc id="a1" source="tr17" target="pl25"/>
+    <arc id="a2" source="pl25" target="tr18"/>
+    <arc id="a3" source="tr19" target="pl26"/>
+    <arc id="a4" source="pl26" target="tr17"/>
+    <arc id="a5" source="tr18" target="pl27"/>
+    <arc id="a6" source="pl27" target="tr19">
+      <graphics>
+        <position x="495" y="429"/>
+        <position x="495" y="66"/>
+      </graphics>
+    </arc>
+    <arc id="a7" source="pl25" target="tr20"/>
+    <arc id="a8" source="tr20" target="pl27"/>
+    <arc id="a9" source="tr21" target="pl27"/>
+    <arc id="a10" source="pl28" target="tr21"/>
+    <arc id="a11" source="pl26" target="tr22"/>
+    <arc id="a12" source="tr22" target="pl29"/>
+    <arc id="a13" source="tr23" target="pl28"/>
+    <arc id="a14" source="tr19" target="pl30"/>
+    <arc id="a15" source="pl30" target="tr23"/>
+    <arc id="a16" source="pl30" target="tr24"/>
+    <arc id="a17" source="tr23" target="pl31"/>
+    <arc id="a18" source="pl31" target="tr24"/>
+    <arc id="a19" source="tr24" target="pl32"/>
+    <arc id="a20" source="pl32" target="tr23"/>
+    <arc id="a21" source="tr24" target="pl33"/>
+    <arc id="a22" source="pl33" target="tr25"/>
+    <arc id="a23" source="tr25" target="pl27"/>
+    <arc id="a24" source="pl29" target="tr21"/>
+    <arc id="a25" source="pl33" target="tr20"/>
+    <arc id="a26" source="pl28" target="tr18"/>
+    <arc id="a27" source="pl29" target="tr25"/>
+    <arc id="a59" source="tr22" target="pl1"/>
+    <arc id="a60" source="pl1" target="tr17"/>
+    <arc id="a61" source="tr17" target="pl2"/>
+    <arc id="a62" source="pl2" target="tr22"/>
+  </page></net>
+</pnml>

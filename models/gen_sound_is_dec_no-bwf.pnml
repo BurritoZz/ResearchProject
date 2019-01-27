@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+  <net type="http://www.pnml.org/version-2009/grammar/ptnet" id="dc1"><page id="dc1_paged">
+    <name>
+      <text>A sound p-workflow net that is not a batch workflow net</text>
+    </name>
+    
+    <transition id="tr1">
+      <graphics>
+        <position x="76" y="16"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr2">
+      <graphics>
+        <position x="76" y="82"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <place id="pl1">
+      <name>
+        <text>i</text>
+      </name>
+      <graphics>
+        <position x="10" y="49"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+      <initialMarking>
+        <text>5</text>
+      </initialMarking>
+    </place>
+    <place id="pl2">
+      <name>
+        <text>f</text>
+      </name>
+      <graphics>
+        <position x="142" y="49"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl3">
+      <graphics>
+        <position x="76" y="148"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <arc id="a1" source="pl1" target="tr1"/>
+    <arc id="a2" source="tr1" target="pl2"/>
+    <arc id="a3" source="pl1" target="tr2"/>
+    <arc id="a4" source="tr2" target="pl2"/>
+    <arc id="a5" source="pl3" target="tr2"/>
+    <arc id="a6" source="tr2" target="pl3"/>
+  </page></net>
+</pnml>

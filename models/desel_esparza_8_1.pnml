@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+  <net type="http://www.pnml.org/version-2009/grammar/ptnet" id="n7"><page id="n7_paged">
+    <name>
+      <text>A live and bounded free-choice system which is not cyclic</text>
+    </name>
+    
+    <transition id="tr35">
+      <name>
+        <text>t1</text>
+      </name>
+      <graphics>
+        <position x="104" y="76"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr36">
+      <name>
+        <text>t2</text>
+      </name>
+      <graphics>
+        <position x="302" y="76"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr37">
+      <name>
+        <text>t3</text>
+      </name>
+      <graphics>
+        <position x="71" y="208"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr38">
+      <name>
+        <text>t6</text>
+      </name>
+      <graphics>
+        <position x="335" y="208"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr39">
+      <name>
+        <text>t5</text>
+      </name>
+      <graphics>
+        <position x="269" y="208"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr40">
+      <name>
+        <text>t7</text>
+      </name>
+      <graphics>
+        <position x="203" y="340"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr41">
+      <graphics>
+        <position x="137" y="208"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <place id="pl42">
+      <name>
+        <text>s1</text>
+      </name>
+      <graphics>
+        <position x="104" y="10"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl43">
+      <name>
+        <text>s2</text>
+      </name>
+      <graphics>
+        <position x="302" y="10"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl44">
+      <name>
+        <text>s3</text>
+      </name>
+      <graphics>
+        <position x="71" y="142"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl45">
+      <name>
+        <text>s4</text>
+      </name>
+      <graphics>
+        <position x="137" y="142"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl46">
+      <name>
+        <text>s6</text>
+      </name>
+      <graphics>
+        <position x="335" y="142"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl47">
+      <name>
+        <text>s8</text>
+      </name>
+      <graphics>
+        <position x="302" y="274"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl48">
+      <name>
+        <text>s5</text>
+      </name>
+      <graphics>
+        <position x="269" y="142"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl49">
+      <name>
+        <text>s7</text>
+      </name>
+      <graphics>
+        <position x="104" y="274"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <arc id="a1" source="pl42" target="tr35"/>
+    <arc id="a2" source="pl43" target="tr35"/>
+    <arc id="a3" source="pl43" target="tr36"/>
+    <arc id="a4" source="pl42" target="tr36"/>
+    <arc id="a5" source="pl44" target="tr37"/>
+    <arc id="a6" source="tr35" target="pl44"/>
+    <arc id="a7" source="tr35" target="pl45"/>
+    <arc id="a8" source="tr36" target="pl46"/>
+    <arc id="a9" source="pl46" target="tr38"/>
+    <arc id="a10" source="tr40" target="pl42">
+      <graphics>
+        <position x="5" y="307"/>
+        <position x="5" y="43"/>
+      </graphics>
+    </arc>
+    <arc id="a11" source="tr40" target="pl43">
+      <graphics>
+        <position x="401" y="307"/>
+        <position x="401" y="43"/>
+      </graphics>
+    </arc>
+    <arc id="a12" source="pl47" target="tr40"/>
+    <arc id="a13" source="tr38" target="pl47"/>
+    <arc id="a14" source="pl48" target="tr39"/>
+    <arc id="a15" source="tr36" target="pl48"/>
+    <arc id="a16" source="tr39" target="pl49"/>
+    <arc id="a17" source="tr37" target="pl49"/>
+    <arc id="a18" source="pl49" target="tr40"/>
+    <arc id="a19" source="tr41" target="pl47"/>
+    <arc id="a20" source="pl45" target="tr41"/>
+  </page></net>
+</pnml>

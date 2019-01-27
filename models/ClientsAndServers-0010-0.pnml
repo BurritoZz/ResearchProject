@@ -1,0 +1,348 @@
+<?xml version="1.0"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+  <net id="ClientsAndServers-PT-N0010P0" type="http://www.pnml.org/version-2009/grammar/ptnet">
+    <page id="page0">
+      <name>
+        <text>DefaultPage</text>
+      </name>
+      <place id="Uf">
+        <name>
+          <text>Uf</text>
+        </name>
+        <initialMarking>
+          <text>40</text>
+        </initialMarking>
+      </place>
+      <place id="SA">
+        <name>
+          <text>SA</text>
+        </name>
+      </place>
+      <place id="SF">
+        <name>
+          <text>SF</text>
+        </name>
+      </place>
+      <place id="SR">
+        <name>
+          <text>SR</text>
+        </name>
+      </place>
+      <place id="CA">
+        <name>
+          <text>CA</text>
+        </name>
+      </place>
+      <place id="CF">
+        <name>
+          <text>CF</text>
+        </name>
+      </place>
+      <place id="StF">
+        <name>
+          <text>StF</text>
+        </name>
+      </place>
+      <place id="CG">
+        <name>
+          <text>CG</text>
+        </name>
+      </place>
+      <place id="CR">
+        <name>
+          <text>CR</text>
+        </name>
+      </place>
+      <place id="MpA">
+        <name>
+          <text>MpA</text>
+        </name>
+      </place>
+      <place id="MtF">
+        <name>
+          <text>MtF</text>
+        </name>
+      </place>
+      <place id="SG">
+        <name>
+          <text>SG</text>
+        </name>
+      </place>
+      <place id="MpG">
+        <name>
+          <text>MpG</text>
+        </name>
+      </place>
+      <place id="MwU">
+        <name>
+          <text>MwU</text>
+        </name>
+      </place>
+      <place id="Mi">
+        <name>
+          <text>Mi</text>
+        </name>
+        <initialMarking>
+          <text>30</text>
+        </initialMarking>
+      </place>
+      <place id="Si">
+        <name>
+          <text>Si</text>
+        </name>
+        <initialMarking>
+          <text>20</text>
+        </initialMarking>
+      </place>
+      <place id="StR">
+        <name>
+          <text>StR</text>
+        </name>
+      </place>
+      <place id="SwG">
+        <name>
+          <text>SwG</text>
+        </name>
+      </place>
+      <place id="SpG">
+        <name>
+          <text>SpG</text>
+        </name>
+      </place>
+      <place id="SwA">
+        <name>
+          <text>SwA</text>
+        </name>
+      </place>
+      <place id="SpA">
+        <name>
+          <text>SpA</text>
+        </name>
+      </place>
+      <place id="CwA">
+        <name>
+          <text>CwA</text>
+        </name>
+      </place>
+      <place id="Cb">
+        <name>
+          <text>Cb</text>
+        </name>
+      </place>
+      <place id="CwG">
+        <name>
+          <text>CwG</text>
+        </name>
+      </place>
+      <place id="Ci">
+        <name>
+          <text>Ci</text>
+        </name>
+        <initialMarking>
+          <text>80</text>
+        </initialMarking>
+      </place>
+      <transition id="ssF">
+        <name>
+          <text>ssF</text>
+        </name>
+      </transition>
+      <transition id="srF">
+        <name>
+          <text>srF</text>
+        </name>
+      </transition>
+      <transition id="msA">
+        <name>
+          <text>msA</text>
+        </name>
+      </transition>
+      <transition id="mfU">
+        <name>
+          <text>mfU</text>
+        </name>
+      </transition>
+      <transition id="mrF">
+        <name>
+          <text>mrF</text>
+        </name>
+      </transition>
+      <transition id="msG">
+        <name>
+          <text>msG</text>
+        </name>
+      </transition>
+      <transition id="maU">
+        <name>
+          <text>maU</text>
+        </name>
+      </transition>
+      <transition id="mrR">
+        <name>
+          <text>mrR</text>
+        </name>
+      </transition>
+      <transition id="srR">
+        <name>
+          <text>srR</text>
+        </name>
+      </transition>
+      <transition id="ssR">
+        <name>
+          <text>ssR</text>
+        </name>
+      </transition>
+      <transition id="srG">
+        <name>
+          <text>srG</text>
+        </name>
+      </transition>
+      <transition id="ssG">
+        <name>
+          <text>ssG</text>
+        </name>
+      </transition>
+      <transition id="srA">
+        <name>
+          <text>srA</text>
+        </name>
+      </transition>
+      <transition id="ssA">
+        <name>
+          <text>ssA</text>
+        </name>
+      </transition>
+      <transition id="crA">
+        <name>
+          <text>crA</text>
+        </name>
+      </transition>
+      <transition id="csF">
+        <name>
+          <text>csF</text>
+        </name>
+      </transition>
+      <transition id="crG">
+        <name>
+          <text>crG</text>
+        </name>
+      </transition>
+      <transition id="csR">
+        <name>
+          <text>csR</text>
+        </name>
+      </transition>
+      <arc id="cId816019017009292977445" source="mfU" target="Uf">
+      </arc>
+      <arc id="cId816349514082126532646" source="Uf" target="maU">
+      </arc>
+      <arc id="cId816349514082126532647" source="Mi" target="mrF">
+      </arc>
+      <arc id="cId816349514082126532648" source="msG" target="Mi">
+      </arc>
+      <arc id="cId816349514082126532649" source="SG" target="srG">
+      </arc>
+      <arc id="cId816349514082126532650" source="msA" target="SA">
+      </arc>
+      <arc id="cId816349514082126532651" source="SA" target="srA">
+      </arc>
+      <arc id="cId816349514082126532652" source="SF" target="mrF">
+      </arc>
+      <arc id="cId816349514082126532653" source="ssF" target="SF">
+      </arc>
+      <arc id="cId816349514082126532654" source="SR" target="mrR">
+      </arc>
+      <arc id="cId816349514082126532655" source="ssR" target="SR">
+      </arc>
+      <arc id="cId816349514082126532656" source="ssF" target="SwA">
+      </arc>
+      <arc id="cId816349514082126532657" source="CA" target="crA">
+      </arc>
+      <arc id="cId816349514082126532658" source="ssA" target="CA">
+      </arc>
+      <arc id="cId816349514082126532659" source="Si" target="srF">
+      </arc>
+      <arc id="cId816349514082126532660" source="CF" target="srF">
+      </arc>
+      <arc id="cId816349514082126532661" source="csF" target="CF">
+      </arc>
+      <arc id="cId816349514082126532662" source="StF" target="ssF">
+      </arc>
+      <arc id="cId816349514082126532663" source="srF" target="StF">
+      </arc>
+      <arc id="cId816349514082126532664" source="ssG" target="Si">
+      </arc>
+      <arc id="cId816349514082126532665" source="CG" target="crG">
+      </arc>
+      <arc id="cId816349514082126532666" source="ssG" target="CG">
+      </arc>
+      <arc id="cId816184265760458119867" source="CR" target="srR">
+      </arc>
+      <arc id="cId816184265760458119868" source="csR" target="CR">
+      </arc>
+      <arc id="cId816184265760458119869" source="csF" target="CwA">
+      </arc>
+      <arc id="cId816184265760458119870" source="crA" target="Ci">
+      </arc>
+      <arc id="cId816184265760458119871" source="CwG" target="crG">
+      </arc>
+      <arc id="cId816184265760458119872" source="msA" target="Mi">
+      </arc>
+      <arc id="cId816184265760458119873" source="msG" target="SG">
+      </arc>
+      <arc id="cId816184265760458119874" source="MpA" target="msA">
+      </arc>
+      <arc id="cId816184265760458119875" source="mfU" target="MpA">
+      </arc>
+      <arc id="cId816184265760458119876" source="MtF" target="mfU">
+      </arc>
+      <arc id="cId816184265760458119877" source="mrF" target="MtF">
+      </arc>
+      <arc id="cId816184265760458119878" source="MpG" target="msG">
+      </arc>
+      <arc id="cId816184265760458119879" source="maU" target="MpG">
+      </arc>
+      <arc id="cId816184265760458119880" source="MwU" target="maU">
+      </arc>
+      <arc id="cId816184265760458119881" source="mrR" target="MwU">
+      </arc>
+      <arc id="cId816184265760458119882" source="Mi" target="mrR">
+      </arc>
+      <arc id="cId816184265760458119883" source="ssA" target="Si">
+      </arc>
+      <arc id="cId816184265760458119884" source="SpG" target="ssG">
+      </arc>
+      <arc id="cId816184265760458119885" source="srG" target="SpG">
+      </arc>
+      <arc id="cId816184265760458119886" source="SpA" target="ssA">
+      </arc>
+      <arc id="cId816184265760458119887" source="srA" target="SpA">
+      </arc>
+      <arc id="cId816184265760458119888" source="SwA" target="srA">
+      </arc>
+      <arc id="cId816184265760458119889" source="SwG" target="srG">
+      </arc>
+      <arc id="cId816184265760458119890" source="ssR" target="SwG">
+      </arc>
+      <arc id="cId816184265760458119891" source="StR" target="ssR">
+      </arc>
+      <arc id="cId816184265760458119892" source="srR" target="StR">
+      </arc>
+      <arc id="cId816184265760458119893" source="Si" target="srR">
+      </arc>
+      <arc id="cId816184265760458119894" source="Cb" target="csF">
+      </arc>
+      <arc id="cId816184265760458119895" source="crG" target="Cb">
+      </arc>
+      <arc id="cId816184265760458119896" source="CwA" target="crA">
+      </arc>
+      <arc id="cId816184265760458119897" source="csR" target="CwG">
+      </arc>
+      <arc id="cId816184265760458119898" source="Ci" target="csR">
+      </arc>
+    </page>
+    <name>
+      <text>ClientsAndServers-PT-N0010P0</text>
+    </name>
+  </net>
+</pnml>

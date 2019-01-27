@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+  <net type="http://www.pnml.org/version-2009/grammar/ptnet" id="dc1"><page id="dc1_paged">
+    <name>
+      <text>A live asymmetric-choice system in which a proper siphon contains no marked trap</text>
+    </name>
+    
+    <transition id="tr13">
+      <graphics>
+        <position x="82" y="76"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr14">
+      <graphics>
+        <position x="82" y="208"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr15">
+      <graphics>
+        <position x="148" y="142"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr16">
+      <graphics>
+        <position x="16" y="142"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <place id="pl21">
+      <graphics>
+        <position x="82" y="142"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl22">
+      <graphics>
+        <position x="82" y="10"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl23">
+      <graphics>
+        <position x="16" y="76"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl24">
+      <graphics>
+        <position x="148" y="76"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <arc id="a11" source="tr13" target="pl21"/>
+    <arc id="a12" source="pl21" target="tr14"/>
+    <arc id="a13" source="tr14" target="pl22">
+      <graphics>
+        <position x="214" y="175"/>
+        <position x="214" y="43"/>
+      </graphics>
+    </arc>
+    <arc id="a14" source="pl22" target="tr13"/>
+    <arc id="a15" source="tr13" target="pl23"/>
+    <arc id="a16" source="pl23" target="tr16"/>
+    <arc id="a17" source="tr13" target="pl24"/>
+    <arc id="a18" source="pl24" target="tr15"/>
+    <arc id="a19" source="pl21" target="tr15"/>
+    <arc id="a20" source="tr16" target="pl21"/>
+  </page></net>
+</pnml>

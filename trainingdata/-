@@ -1,0 +1,86 @@
+import pandas
+from sklearn import svm
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.neighbors import KNeighborsRegressor
+from sklearn import linear_model
+import matplotlib.pyplot as plt
+import itertools
+data = pandas.read_csv("bfslikemcc.csv")
+data = data.drop(labels='satgranularity', axis=1)
+data = data.dropna()
+data = data.reset_index()
+feature_cols = [ 'profile', 'span', 'Places', 'Transitions', 'Arcs', 'Ordinary', 'Simple_free_choice', 'Extended_free_choice', 'State_machine', 'Marked_graph', 'Connected', 'Strongly_connected', 'Source_place', 'Sink_place', 'Source_transitions', 'Sink_transitions', 'Loop_free', 'Conservative', 'Subconservative', 'Nested_units', 'Safe', 'Deadlock', 'Quasi_live', 'Live', 'Markings', 'Firings', 'Max_tokens_place', 'Min_tokens_marking', 'Max_tokens_marking', 'Dead_transitions', 'Concurrent_Units', 'Exclusives' ]
+#feature_cols = [ 'profile', 'span', 'Transitions', 'Min_tokens_marking', 'Concurrent_Units' ]
+X = data.loc[:, feature_cols]
+y = data.timeAvg
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=42)
+
+def powerset(iterable):
+    s = list(iterable)
+    return itertools.chain.from_iterable(combinations(s, r) for r in range(len(s)+1))
+pSet = powerset(feature_cols)
+print(pSet)
+
+#print(subs(feature_cols))
+
+#print("Ridge")
+#reg = linear_model.Ridge()
+#reg.fit(X_train, y_train)
+#print(reg.score(X_test, y_test))
+#
+#print("Lasso")
+#reg = linear_model.Lasso()
+#reg.fit(X_train, y_train)
+#print(reg.score(X_test, y_test))
+#
+#print("MultiTaskLasso")
+#reg = linear_model.MultiTaskLasso()
+#reg.fit(X_train, y_train)
+#print(reg.score(X_test, y_test))
+#
+#print("ElasticNet")
+#reg = linear_model.ElasticNet()
+#reg.fit(X_train, y_train)
+#print(reg.score(X_test, y_test))
+#
+#print("MultiTaskElasticNet")
+#reg = linear_model.MultiTaskElasticNet()
+#reg.fit(X_train, y_train)
+#print(reg.score(X_test, y_test))
+#
+#print("BayesianRidge")
+#reg = linear_model.BayesianRidge()
+#reg.fit(X_train, y_train)
+#print(reg.score(X_test, y_test))
+#
+#print("ARDRegression")
+#reg = linear_model.ARDRegression()
+#reg.fit(X_train, y_train)
+#print(reg.score(X_test, y_test))
+#
+#print("SVR")
+#reg = svm.SVR(kernel='rbf')
+#reg.fit(X_train, y_train)
+#print(reg.score(X_test, y_test))
+#
+#print("KNeighbors")
+#reg = KNeighborsRegressor(n_neighbors=1, weights='distance', p=2)
+#reg.fit(X_train, y_train)
+#print(reg.score(X_test, y_test))
+#
+#print("Decision tree regressor")
+#print("mse")
+#reg = DecisionTreeRegressor(criterion='mse', splitter='random')
+#reg.fit(X_train, y_train)
+#print(reg.score(X_test, y_test))
+#
+#print("friedman")
+#reg = DecisionTreeRegressor(criterion='friedman_mse', splitter='random')
+#reg.fit(X_train, y_train)
+#print(reg.score(X_test, y_test))
+#
+#print("mae")
+#reg = DecisionTreeRegressor(criterion='mae', splitter='random')
+#reg.fit(X_train, y_train)
+#print(reg.score(X_test, y_test))

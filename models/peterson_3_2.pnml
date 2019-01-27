@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+  <net type="http://www.pnml.org/version-2009/grammar/ptnet" id="do26"><page id="do26_paged">
+    <name>
+      <text>A  machine shop with multiple processing stages</text>
+    </name>
+    
+    <transition id="tr2">
+      <name>
+        <text>An order arrives</text>
+      </name>
+      <graphics>
+        <position x="16" y="241"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr7">
+      <name>
+        <text>Operator F1 starts the order on machine M1</text>
+      </name>
+      <graphics>
+        <position x="181" y="142"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr8">
+      <name>
+        <text>Operator F1 finishes the order on machine M1</text>
+      </name>
+      <graphics>
+        <position x="379" y="142"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr1">
+      <name>
+        <text>Operator F1 starts the order on machine M2</text>
+      </name>
+      <graphics>
+        <position x="511" y="142"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr3">
+      <name>
+        <text>Operator F1 finishes the order on machine M2</text>
+      </name>
+      <graphics>
+        <position x="709" y="142"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr4">
+      <name>
+        <text>The order is sent for delivery</text>
+      </name>
+      <graphics>
+        <position x="874" y="241"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr5">
+      <name>
+        <text>Operator F2 starts the order on machine M1</text>
+      </name>
+      <graphics>
+        <position x="181" y="340"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr6">
+      <name>
+        <text>Operator F2 finishes the order on machine M1</text>
+      </name>
+      <graphics>
+        <position x="379" y="340"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr10">
+      <name>
+        <text>Operator F2 starts the order on machine M2</text>
+      </name>
+      <graphics>
+        <position x="511" y="340"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr11">
+      <name>
+        <text>Operator F2 finishes the order on machine M2</text>
+      </name>
+      <graphics>
+        <position x="709" y="340"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <place id="pl3">
+      <name>
+        <text>An order is waiting</text>
+      </name>
+      <graphics>
+        <position x="115" y="241"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl4">
+      <name>
+        <text>The order is half way through</text>
+      </name>
+      <graphics>
+        <position x="445" y="241"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl6">
+      <name>
+        <text>M1 is processing the order</text>
+      </name>
+      <graphics>
+        <position x="280" y="142"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl7">
+      <name>
+        <text>Machine M1 is available</text>
+      </name>
+      <graphics>
+        <position x="280" y="241"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl1">
+      <name>
+        <text>Operator F1 is available</text>
+      </name>
+      <graphics>
+        <position x="445" y="10"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl5">
+      <name>
+        <text>M2 is processing the order</text>
+      </name>
+      <graphics>
+        <position x="610" y="142"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl8">
+      <name>
+        <text>Machine M2 is available</text>
+      </name>
+      <graphics>
+        <position x="610" y="241"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl9">
+      <name>
+        <text>The order is complete</text>
+      </name>
+      <graphics>
+        <position x="775" y="241"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl10">
+      <name>
+        <text>M1 is processing the order</text>
+      </name>
+      <graphics>
+        <position x="280" y="340"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl11">
+      <name>
+        <text>Operator F2 is available</text>
+      </name>
+      <graphics>
+        <position x="445" y="472"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl12">
+      <name>
+        <text>M2 is processing the order</text>
+      </name>
+      <graphics>
+        <position x="610" y="340"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <arc id="a4" source="tr2" target="pl3"/>
+    <arc id="a9" source="pl3" target="tr7">
+      <graphics>
+        <position x="148" y="142"/>
+      </graphics>
+    </arc>
+    <arc id="a10" source="tr8" target="pl4">
+      <graphics>
+        <position x="412" y="142"/>
+      </graphics>
+    </arc>
+    <arc id="a11" source="tr7" target="pl6"/>
+    <arc id="a12" source="pl6" target="tr8"/>
+    <arc id="a13" source="tr8" target="pl7"/>
+    <arc id="a14" source="pl7" target="tr7"/>
+    <arc id="a15" source="pl1" target="tr7">
+      <graphics>
+        <position x="181" y="43"/>
+      </graphics>
+    </arc>
+    <arc id="a16" source="tr8" target="pl1">
+      <graphics>
+        <position x="379" y="43"/>
+      </graphics>
+    </arc>
+    <arc id="a17" source="tr1" target="pl5"/>
+    <arc id="a18" source="pl5" target="tr3"/>
+    <arc id="a19" source="tr3" target="pl8"/>
+    <arc id="a20" source="pl8" target="tr1"/>
+    <arc id="a21" source="pl1" target="tr1">
+      <graphics>
+        <position x="511" y="43"/>
+      </graphics>
+    </arc>
+    <arc id="a22" source="tr3" target="pl1">
+      <graphics>
+        <position x="709" y="43"/>
+      </graphics>
+    </arc>
+    <arc id="a23" source="pl4" target="tr1">
+      <graphics>
+        <position x="478" y="142"/>
+      </graphics>
+    </arc>
+    <arc id="a24" source="pl9" target="tr4"/>
+    <arc id="a25" source="tr3" target="pl9">
+      <graphics>
+        <position x="742" y="142"/>
+      </graphics>
+    </arc>
+    <arc id="a26" source="pl3" target="tr5">
+      <graphics>
+        <position x="148" y="340"/>
+      </graphics>
+    </arc>
+    <arc id="a27" source="tr6" target="pl4">
+      <graphics>
+        <position x="412" y="340"/>
+      </graphics>
+    </arc>
+    <arc id="a28" source="tr5" target="pl10"/>
+    <arc id="a29" source="pl10" target="tr6"/>
+    <arc id="a30" source="tr6" target="pl7"/>
+    <arc id="a31" source="pl7" target="tr5"/>
+    <arc id="a32" source="pl11" target="tr5">
+      <graphics>
+        <position x="181" y="439"/>
+      </graphics>
+    </arc>
+    <arc id="a33" source="tr6" target="pl11">
+      <graphics>
+        <position x="379" y="439"/>
+      </graphics>
+    </arc>
+    <arc id="a34" source="tr10" target="pl12"/>
+    <arc id="a35" source="pl12" target="tr11"/>
+    <arc id="a36" source="tr11" target="pl8"/>
+    <arc id="a37" source="pl8" target="tr10"/>
+    <arc id="a38" source="pl11" target="tr10">
+      <graphics>
+        <position x="511" y="439"/>
+      </graphics>
+    </arc>
+    <arc id="a39" source="tr11" target="pl11">
+      <graphics>
+        <position x="709" y="439"/>
+      </graphics>
+    </arc>
+    <arc id="a40" source="pl4" target="tr10">
+      <graphics>
+        <position x="478" y="340"/>
+      </graphics>
+    </arc>
+    <arc id="a41" source="tr11" target="pl9">
+      <graphics>
+        <position x="742" y="340"/>
+      </graphics>
+    </arc>
+  </page></net>
+</pnml>

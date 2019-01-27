@@ -1,0 +1,8 @@
+0 startLoading
+1 endLoading
+2 endUnload
+3 startUnload
+4 startFirst
+5 startNext
+6 suspend
+7 freeMemory

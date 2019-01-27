@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+  <net type="http://www.pnml.org/version-2009/grammar/ptnet" id="dc1"><page id="dc1_paged">
+    <name>
+      <text>An unsafe net</text>
+    </name>
+    
+    <transition id="tr4">
+      <name>
+        <text>t1</text>
+      </name>
+      <graphics>
+        <position x="16" y="76"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr5">
+      <name>
+        <text>t2</text>
+      </name>
+      <graphics>
+        <position x="148" y="76"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr6">
+      <name>
+        <text>t3</text>
+      </name>
+      <graphics>
+        <position x="280" y="76"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <place id="pl7">
+      <name>
+        <text>p1</text>
+      </name>
+      <graphics>
+        <position x="82" y="76"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl8">
+      <name>
+        <text>p2</text>
+      </name>
+      <graphics>
+        <position x="214" y="76"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl9">
+      <name>
+        <text>p3</text>
+      </name>
+      <graphics>
+        <position x="148" y="10"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <arc id="a1" source="tr4" target="pl7"/>
+    <arc id="a2" source="pl7" target="tr5"/>
+    <arc id="a3" source="pl8" target="tr6"/>
+    <arc id="a4" source="tr5" target="pl8"/>
+    <arc id="a5" source="pl9" target="tr5"/>
+    <arc id="a6" source="tr5" target="pl9"/>
+  </page></net>
+</pnml>

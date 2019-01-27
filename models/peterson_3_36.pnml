@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+  <net type="http://www.pnml.org/version-2009/grammar/ptnet" id="dc1"><page id="dc1_paged">
+    <name>
+      <text>The construction of a house</text>
+    </name>
+    
+    <transition id="tr7">
+      <graphics>
+        <position x="214" y="307"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+      <toolspecific tool="Yasper" version="1.0.2349.43145">
+        <processingTime xmlns="">
+          <mean>
+            <text>4</text>
+          </mean>
+          <deviation>
+            <text>0</text>
+          </deviation>
+        </processingTime>
+      </toolspecific>
+    </transition>
+    <transition id="tr8">
+      <graphics>
+        <position x="214" y="175"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr9">
+      <graphics>
+        <position x="214" y="439"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+      <toolspecific tool="Yasper" version="1.0.2349.43145">
+        <processingTime xmlns="">
+          <mean>
+            <text>2</text>
+          </mean>
+          <deviation>
+            <text>0</text>
+          </deviation>
+        </processingTime>
+      </toolspecific>
+    </transition>
+    <transition id="tr11">
+      <graphics>
+        <position x="412" y="505"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+      <toolspecific tool="Yasper" version="1.0.2349.43145">
+        <processingTime xmlns="">
+          <mean>
+            <text>1</text>
+          </mean>
+          <deviation>
+            <text>0</text>
+          </deviation>
+        </processingTime>
+      </toolspecific>
+    </transition>
+    <transition id="tr12">
+      <graphics>
+        <position x="214" y="571"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+      <toolspecific tool="Yasper" version="1.0.2349.43145">
+        <processingTime xmlns="">
+          <mean>
+            <text>4</text>
+          </mean>
+          <deviation>
+            <text>0</text>
+          </deviation>
+        </processingTime>
+      </toolspecific>
+    </transition>
+    <transition id="tr13">
+      <graphics>
+        <position x="115" y="670"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+      <toolspecific tool="Yasper" version="1.0.2349.43145">
+        <processingTime xmlns="">
+          <mean>
+            <text>6</text>
+          </mean>
+          <deviation>
+            <text>0</text>
+          </deviation>
+        </processingTime>
+      </toolspecific>
+    </transition>
+    <transition id="tr14">
+      <graphics>
+        <position x="115" y="802"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+      <toolspecific tool="Yasper" version="1.0.2349.43145">
+        <processingTime xmlns="">
+          <mean>
+            <text>2</text>
+          </mean>
+          <deviation>
+            <text>0</text>
+          </deviation>
+        </processingTime>
+      </toolspecific>
+    </transition>
+    <transition id="tr16">
+      <graphics>
+        <position x="16" y="901"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+      <toolspecific tool="Yasper" version="1.0.2349.43145">
+        <processingTime xmlns="">
+          <mean>
+            <text>1</text>
+          </mean>
+          <deviation>
+            <text>0</text>
+          </deviation>
+        </processingTime>
+      </toolspecific>
+    </transition>
+    <transition id="tr25">
+      <graphics>
+        <position x="16" y="1033"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+      <toolspecific tool="Yasper" version="1.0.2349.43145">
+        <processingTime xmlns="">
+          <mean>
+            <text>2</text>
+          </mean>
+          <deviation>
+            <text>0</text>
+          </deviation>
+        </processingTime>
+      </toolspecific>
+    </transition>
+    <transition id="tr27">
+      <graphics>
+        <position x="346" y="637"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+      <toolspecific tool="Yasper" version="1.0.2349.43145">
+        <processingTime xmlns="">
+          <mean>
+            <text>2</text>
+          </mean>
+          <deviation>
+            <text>0</text>
+          </deviation>
+        </processingTime>
+      </toolspecific>
+    </transition>
+    <transition id="tr29">
+      <graphics>
+        <position x="313" y="802"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+      <toolspecific tool="Yasper" version="1.0.2349.43145">
+        <processingTime xmlns="">
+          <mean>
+            <text>4</text>
+          </mean>
+          <deviation>
+            <text>0</text>
+          </deviation>
+        </processingTime>
+      </toolspecific>
+    </transition>
+    <transition id="tr31">
+      <graphics>
+        <position x="313" y="1066"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+      <toolspecific tool="Yasper" version="1.0.2349.43145">
+        <processingTime xmlns="">
+          <mean>
+            <text>3</text>
+          </mean>
+          <deviation>
+            <text>0</text>
+          </deviation>
+        </processingTime>
+      </toolspecific>
+    </transition>
+    <transition id="tr32">
+      <graphics>
+        <position x="214" y="1165"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+      <toolspecific tool="Yasper" version="1.0.2349.43145">
+        <processingTime xmlns="">
+          <mean>
+            <text>3</text>
+          </mean>
+          <deviation>
+            <text>0</text>
+          </deviation>
+        </processingTime>
+      </toolspecific>
+    </transition>
+    <transition id="tr33">
+      <graphics>
+        <position x="412" y="1165"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+      <toolspecific tool="Yasper" version="1.0.2349.43145">
+        <processingTime xmlns="">
+          <mean>
+            <text>2</text>
+          </mean>
+          <deviation>
+            <text>0</text>
+          </deviation>
+        </processingTime>
+      </toolspecific>
+    </transition>
+    <transition id="tr35">
+      <graphics>
+        <position x="412" y="1297"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+      <toolspecific tool="Yasper" version="1.0.2349.43145">
+        <processingTime xmlns="">
+          <mean>
+            <text>3</text>
+          </mean>
+          <deviation>
+            <text>0</text>
+          </deviation>
+        </processingTime>
+      </toolspecific>
+    </transition>
+    <transition id="tr36">
+      <graphics>
+        <position x="214" y="1363"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+      <toolspecific tool="Yasper" version="1.0.2349.43145">
+        <processingTime xmlns="">
+          <mean>
+            <text>2</text>
+          </mean>
+          <deviation>
+            <text>0</text>
+          </deviation>
+        </processingTime>
+      </toolspecific>
+    </transition>
+    <transition id="tr38">
+      <name>
+        <text>Finish</text>
+      </name>
+      <graphics>
+        <position x="214" y="1495"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+    </transition>
+    <transition id="tr39">
+      <graphics>
+        <position x="313" y="934"/>
+        <dimension x="32" y="32"/>
+      </graphics>
+      <toolspecific tool="Yasper" version="1.0.2349.43145">
+        <processingTime xmlns="">
+          <mean>
+            <text>10</text>
+          </mean>
+          <deviation>
+            <text>0</text>
+          </deviation>
+        </processingTime>
+      </toolspecific>
+    </transition>
+    <place id="pl10">
+      <name>
+        <text>Foundation</text>
+      </name>
+      <graphics>
+        <position x="214" y="373"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl11">
+      <name>
+        <text>Start</text>
+      </name>
+      <graphics>
+        <position x="214" y="10"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+      <initialMarking>
+        <text>1</text>
+      </initialMarking>
+    </place>
+    <place id="pl12">
+      <name>
+        <text>Excavate</text>
+      </name>
+      <graphics>
+        <position x="214" y="241"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl13">
+      <name>
+        <text>Storm drains</text>
+      </name>
+      <graphics>
+        <position x="16" y="505"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl14">
+      <name>
+        <text>Basement plumbing</text>
+      </name>
+      <graphics>
+        <position x="313" y="472"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl15">
+      <name>
+        <text>Wooden frame</text>
+      </name>
+      <graphics>
+        <position x="214" y="505"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl16">
+      <name>
+        <text>Brickwork</text>
+      </name>
+      <graphics>
+        <position x="115" y="604"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl17">
+      <name>
+        <text>Finish roofing</text>
+      </name>
+      <graphics>
+        <position x="115" y="736"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl18">
+      <name>
+        <text>Rough wiring</text>
+      </name>
+      <graphics>
+        <position x="214" y="736"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl19">
+      <name>
+        <text>Gutters, downspouts</text>
+      </name>
+      <graphics>
+        <position x="115" y="868"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl21">
+      <name>
+        <text>Grading</text>
+      </name>
+      <graphics>
+        <position x="16" y="967"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl33">
+      <name>
+        <text>Walks and landscaping</text>
+      </name>
+      <graphics>
+        <position x="16" y="1363"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl34">
+      <name>
+        <text>Basement floor</text>
+      </name>
+      <graphics>
+        <position x="346" y="571"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl37">
+      <name>
+        <text>Heating</text>
+      </name>
+      <graphics>
+        <position x="313" y="703"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl39">
+      <name>
+        <text>Rough plumbing</text>
+      </name>
+      <graphics>
+        <position x="412" y="736"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl41">
+      <name>
+        <text>Plaster</text>
+      </name>
+      <graphics>
+        <position x="313" y="868"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl42">
+      <name>
+        <text>Finish carpentry</text>
+      </name>
+      <graphics>
+        <position x="214" y="1099"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl43">
+      <name>
+        <text>Finish plumbing</text>
+      </name>
+      <graphics>
+        <position x="412" y="1099"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl45">
+      <name>
+        <text>Paint</text>
+      </name>
+      <graphics>
+        <position x="412" y="1231"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl46">
+      <name>
+        <text>Kitchen fixtures</text>
+      </name>
+      <graphics>
+        <position x="313" y="1132"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl47">
+      <name>
+        <text>Varnish floors</text>
+      </name>
+      <graphics>
+        <position x="214" y="1264"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl48">
+      <graphics>
+        <position x="313" y="1330"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl49">
+      <name>
+        <text>Finish electrical work</text>
+      </name>
+      <graphics>
+        <position x="412" y="1363"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl51">
+      <name>
+        <text>Varnish floors</text>
+      </name>
+      <graphics>
+        <position x="214" y="1429"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl53">
+      <graphics>
+        <position x="280" y="604"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <place id="pl54">
+      <name>
+        <text>Finish flooring</text>
+      </name>
+      <graphics>
+        <position x="313" y="1000"/>
+        <dimension x="20" y="20"/>
+      </graphics>
+    </place>
+    <arc id="a1" source="tr7" target="pl10"/>
+    <arc id="a2" source="pl11" target="tr8"/>
+    <arc id="a3" source="tr8" target="pl12"/>
+    <arc id="a4" source="pl12" target="tr7"/>
+    <arc id="a5" source="pl10" target="tr9"/>
+    <arc id="a6" source="tr9" target="pl13"/>
+    <arc id="a7" source="tr9" target="pl14"/>
+    <arc id="a8" source="pl14" target="tr11"/>
+    <arc id="a9" source="tr9" target="pl15"/>
+    <arc id="a10" source="pl15" target="tr12"/>
+    <arc id="a11" source="tr12" target="pl16"/>
+    <arc id="a12" source="pl16" target="tr13"/>
+    <arc id="a13" source="tr13" target="pl17"/>
+    <arc id="a14" source="pl17" target="tr14"/>
+    <arc id="a15" source="tr12" target="pl18"/>
+    <arc id="a16" source="tr14" target="pl19"/>
+    <arc id="a17" source="pl19" target="tr16"/>
+    <arc id="a18" source="tr16" target="pl21"/>
+    <arc id="a19" source="pl21" target="tr25"/>
+    <arc id="a20" source="tr25" target="pl33"/>
+    <arc id="a21" source="tr11" target="pl34"/>
+    <arc id="a22" source="pl34" target="tr27"/>
+    <arc id="a23" source="tr27" target="pl37"/>
+    <arc id="a24" source="tr11" target="pl39"/>
+    <arc id="a25" source="tr29" target="pl41"/>
+    <arc id="a26" source="tr31" target="pl42"/>
+    <arc id="a27" source="pl42" target="tr32"/>
+    <arc id="a28" source="tr31" target="pl43"/>
+    <arc id="a29" source="pl43" target="tr33"/>
+    <arc id="a30" source="tr33" target="pl45"/>
+    <arc id="a31" source="pl45" target="tr35"/>
+    <arc id="a32" source="tr31" target="pl46"/>
+    <arc id="a33" source="tr32" target="pl47"/>
+    <arc id="a34" source="pl47" target="tr36"/>
+    <arc id="a35" source="tr35" target="pl48"/>
+    <arc id="a36" source="pl48" target="tr36"/>
+    <arc id="a37" source="tr35" target="pl49"/>
+    <arc id="a38" source="tr36" target="pl51"/>
+    <arc id="a39" source="pl51" target="tr38"/>
+    <arc id="a40" source="tr12" target="pl53"/>
+    <arc id="a41" source="pl53" target="tr27"/>
+    <arc id="a42" source="pl39" target="tr29"/>
+    <arc id="a43" source="pl41" target="tr39"/>
+    <arc id="a44" source="tr39" target="pl54"/>
+    <arc id="a45" source="pl54" target="tr31"/>
+    <arc id="a46" source="pl18" target="tr29"/>
+    <arc id="a47" source="pl13" target="tr16"/>
+    <arc id="a48" source="pl46" target="tr33"/>
+    <arc id="a49" source="pl49" target="tr38"/>
+    <arc id="a50" source="pl33" target="tr38"/>
+    <arc id="a51" source="pl37" target="tr29"/>
+  </page></net>
+</pnml>
