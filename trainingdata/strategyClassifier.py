@@ -131,7 +131,7 @@ def getAverageCompletionTime(df):
     for time in timeFrame:
         print(time)
         count += 1
-        totalTime = time
+        totalTime = totalTime + time
     return totalTime / count
 
 timeTuple = {}
@@ -170,6 +170,7 @@ print(smallest)
 
 right = 0
 wrong = 0
+timeGainAvg = 0
 for i in range(0, 100):
     train, test = train_test_split(smallest['filename'], test_size=0.33)
 
@@ -211,6 +212,7 @@ for i in range(0, 100):
     #print(regressorScores)
     wrongCount = 0
     rightCount = 0
+    timeGain = 0
     for modelName in bestStrat:
         stratDf = getStratDf(bestStrat[modelName][0])
         bestPredStratName = bestStrat[modelName][0]
@@ -220,12 +222,16 @@ for i in range(0, 100):
             rightCount = rightCount + 1
         else:
             wrongCount = wrongCount + 1
+        timeGain = timeGain + bestOverallStratTime - bestPredStratTime
         print("Model name: " + str(modelName) + " best strat: " + str(bestPredStratName) + " time: " + str(bestPredStratTime) + " time in overall strat: " + str(bestOverallStratTime))
     right += rightCount
     wrong += wrongCount
+    timeGain = timeGain / 42
     print("Right: " + str(rightCount) + " Wrong: " + str(wrongCount))
+    timeGainAvg = timeGainAvg + timeGain
 right = right/100
 wrong = wrong/100
+timeGainAvg = timeGainAvg / 100
 
-print("Average Right: " + str(right) + " Average wrong: " + str(wrong))
+print("Average Right: " + str(right) + " Average wrong: " + str(wrong) + " Gained time: " + str(timeGainAvg))
 
